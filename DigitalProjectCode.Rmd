@@ -23,94 +23,92 @@ This visualization is a network of individuals associated with 22 higher educati
 ```
 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
-#library(visNetwork)
-#library(igraph) #load the necessary libraries
-#library(dplyr)
-#library(tidyr)
+library(visNetwork)
+library(igraph) #load the necessary libraries
+library(dplyr)
+library(tidyr)
 ```
 
 ````{r, message=FALSE, warning=FALSE, echo=FALSE}
  
-  #edges <- read.csv("edge3.csv", stringsAsFactors = FALSE) 
-#edges <- as.data.frame(edges)
+edges <- read.csv("edge3.csv", stringsAsFactors = FALSE) 
+edges <- as.data.frame(edges)
 
-#nodes <- read.csv("nodes2.csv", stringsAsFactors = FALSE) 
-#nodes <- as.data.frame(nodes)
+nodes <- read.csv("nodes2.csv", stringsAsFactors = FALSE) 
+nodes <- as.data.frame(nodes)
 ````
 
 ````{r, message=FALSE, warning=FALSE, echo=FALSE}
-#edges <- edges %>%
-  #mutate(title = edges$Relationship[1:287]) %>%
-  #mutate(color = ifelse(edges$Relationship == "Benefactor", "green",
-                        #ifelse(edges$Relationship == "Board Member", "blue",
-                               #ifelse(edges$Relationship == "President", "darkred",
-                                      #ifelse(edges$Relationship == "Key Figure", "hotpink",
-                                                                                       #ifelse(edges$Relationship == "Founder", "purple",
-                                                                                              #ifelse(edges$Relationship == "Namesake", "turquoise", "gray")))))))
+edges <- edges %>%
+  mutate(title = edges$Relationship[1:287]) %>%
+  mutate(color = ifelse(edges$Relationship == "Benefactor", "green",
+                        ifelse(edges$Relationship == "Board Member", "blue",
+                               ifelse(edges$Relationship == "President", "darkred",
+                                      ifelse(edges$Relationship == "Key Figure", "hotpink",
+                                                                                       ifelse(edges$Relationship == "Founder", "purple",
+                                                                                              ifelse(edges$Relationship == "Namesake", "turquoise", "gray")))))))
 ````
 
 ````{r, message=FALSE, warning=FALSE, echo=FALSE}
 #Customize the nodes by color in network. Nodes are each of the 22 institutions.
-#nodes <- nodes %>%
-  #mutate(title = (nodes$ID[1:287])) %>%
-  #mutate(color = ifelse(nodes$Location == "Allen University", "beige",
-                        #ifelse(nodes$Location == "Benedict College", "salmon",
-                               #ifelse(nodes$Location == "Claflin University", "navy",
-                                      #ifelse(nodes$Location == "Clemson University", "orange",
-                                             #ifelse(nodes$Location == "College of Charleston", "maroon",
-                                                    #ifelse(nodes$Location == "Columbia College", "lavender",
-                                                           #ifelse(nodes$Location == "Converse University", "pink",
-                                                                  #ifelse(nodes$Location == "Erskine College", "brown",
-                                                     # ifelse(nodes$Location == "Furman University", "cyan",
-                                                             #   ifelse(nodes$Location == "Lander University", "cadetblue",
-                                                             # ifelse(nodes$Location == "Limestone University", "darkgray",
-                                          #ifelse(nodes$Location == "Lutheran Theological Southern Seminary", "blueviolet",
-                                              #ifelse(nodes$Location == "Medical University of South Carolina", "brown4",
-                                                          # ifelse(nodes$Location == "Newberry College", "aquamarine",
-                                                       # ifelse(nodes$Location == "North Greenville University", "yellow",
-                                                       #      ifelse(nodes$Location == "Presbyterian College", "royalblue",                                                        ifelse(nodes$Location == "South Carolina State University", "red",
-                                                                  #   ifelse(nodes$Location == "The Citadel", "powderblue",
-                                                      # ifelse(nodes$Location == "University of South Carolina", "black",
-                                                         #  ifelse(nodes$Location == "Voorhees University", "lightgreen",
-                                                          #  ifelse(nodes$Location == "Winthrop University", "lightyellow",
-                                          # ifelse(nodes$Location == "Wofford College", "gold", "tan")))))))))))))))))))))))
+nodes <- nodes %>%
+  mutate(title = (nodes$ID[1:287])) %>%
+  mutate(color = ifelse(nodes$Location == "Allen University", "beige",
+                        ifelse(nodes$Location == "Benedict College", "salmon",
+                               ifelse(nodes$Location == "Claflin University", "navy",
+                                      ifelse(nodes$Location == "Clemson University", "orange",
+                                             ifelse(nodes$Location == "College of Charleston", "maroon",
+                                                    ifelse(nodes$Location == "Columbia College", "lavender",
+                                                           ifelse(nodes$Location == "Converse University", "pink",
+                                                                  ifelse(nodes$Location == "Erskine College", "brown",
+                                                     ifelse(nodes$Location == "Furman University", "cyan",
+                                                                ifelse(nodes$Location == "Lander University", "cadetblue",
+                                                             ifelse(nodes$Location == "Limestone University", "darkgray",
+                                          ifelse(nodes$Location == "Lutheran Theological Southern Seminary", "blueviolet",
+                                              ifelse(nodes$Location == "Medical University of South Carolina", "brown4",
+                                                          ifelse(nodes$Location == "Newberry College", "aquamarine",
+                                                       ifelse(nodes$Location == "North Greenville University", "yellow",
+                                                            ifelse(nodes$Location == "Presbyterian College", "royalblue",                                                        ifelse(nodes$Location == "South Carolina State University", "red",
+                                                                    ifelse(nodes$Location == "The Citadel", "powderblue",
+                                                      ifelse(nodes$Location == "University of South Carolina", "black",
+                                                         ifelse(nodes$Location == "Voorhees University", "lightgreen",
+                                                          ifelse(nodes$Location == "Winthrop University", "lightyellow",
+                                          ifelse(nodes$Location == "Wofford College", "gold", "tan")))))))))))))))))))))))
       
 ````
 
 
 ```{r}
 #Make data frames for edge and node legends
-#ledges <- data.frame(color = c("green", "blue", "darkred", "hotpink", "purple", "turquoise"),
-                     #label = c("Benefactor", "Board Member", "President", "Key Figure", "Founder", "Namesake"))
+ledges <- data.frame(color = c("green", "blue", "darkred", "hotpink", "purple", "turquoise"),
+                     label = c("Benefactor", "Board Member", "President", "Key Figure", "Founder", "Namesake"))
 
-#lnodes <- data.frame(label = c("Allen University", "Benedict College", "Claflin University", "Clemson University", "College of Charleston", "Columbia College", "Converse University", "Erskine College", "Furman University", "Lander University", "Limestone University", "Lutheran Theological Southern Seminary", "Medical University of South Carolina", "Newberry College", "North Greenville University", "Presbyterian College", "South Carolina State University", "The Citadel", "University of South Carolina", "Voorhees University", "Winthrop University", "Wofford College"),
-                     #shape = c("triangle", "triangle", "triangle", "ellipse", "ellipse", "triangle", "triangle", "triangle", "triangle", "triangle", "triangle", "triangle", "square", "triangle", "triangle", "triangle", "ellipse", "ellipse", "ellipse", "triangle", "ellipse", "triangle"),
-                    # color = c("beige", "salmon", "navy", "orange", "maroon", "lavender", "pink", "brown", "cyan", "cadetblue", "darkgray", "blueviolet", "brown4", "aquamarine", "yellow", "royalblue", "red", "powderblue", "black", "lightgreen", "lightyellow", "gold"),
-                  #  ID = 1:22) 
+lnodes <- data.frame(label = c("Allen University", "Benedict College", "Claflin University", "Clemson University", "College of Charleston", "Columbia College", "Converse University", "Erskine College", "Furman University", "Lander University", "Limestone University", "Lutheran Theological Southern Seminary", "Medical University of South Carolina", "Newberry College", "North Greenville University", "Presbyterian College", "South Carolina State University", "The Citadel", "University of South Carolina", "Voorhees University", "Winthrop University", "Wofford College"),
+                    shape = c("triangle", "triangle", "triangle", "ellipse", "ellipse", "triangle", "triangle", "triangle", "triangle", "triangle", "triangle", "triangle", "square", "triangle", "triangle", "triangle", "ellipse", "ellipse", "ellipse", "triangle", "ellipse", "triangle"),
+                    color = c("beige", "salmon", "navy", "orange", "maroon", "lavender", "pink", "brown", "cyan", "cadetblue", "darkgray", "blueviolet", "brown4", "aquamarine", "yellow", "royalblue", "red", "powderblue", "black", "lightgreen", "lightyellow", "gold"),
+                   ID = 1:22) 
 ```
 
 
 ```{r, echo=FALSE}
-#edges <- edges %>% rename(from = from, to = to)
-#visNetwork(nodes, edges, height = 650, width = 1100) %>%
-  #visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
-  #visNodes(size = 8, shape = nodes$shape, 
-           #label = paste(nodes$ID1),
-           #title = title,
-           #font = list("size" = 10)) %>%
-  #visEdges(color = list(color = edges$color, opacity = 0.2),
-           #hoverWidth = 1,
-           #selectionWidth = 6) %>%
-  #visOptions(highlightNearest = list("degree" = 1),
-             #selectedBy = list("variable" = "title"),
-             #nodesIdSelection = TRUE) %>%
-  #visInteraction(dragNodes = TRUE,
-                 #hover = TRUE,
-                 #hoverConnectedEdges = TRUE,
-                 #multiselect = TRUE) %>%
-  #visLegend(addEdges = ledges, addNodes = lnodes, useGroups = FALSE, width = 0.12, position = "left")
-
-
+edges <- edges %>% rename(from = ID, to = ID.1)
+visNetwork(nodes, edges, height = 650, width = 1100) %>%
+  visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
+  visNodes(size = 8, shape = nodes$shape, 
+           label = paste(nodes$ID1),
+           title = title,
+           font = list("size" = 10)) %>%
+  visEdges(color = list(color = edges$color, opacity = 0.2),
+           hoverWidth = 1,
+           selectionWidth = 6) %>%
+  visOptions(highlightNearest = list("degree" = 1),
+             selectedBy = list("variable" = "title"),
+             nodesIdSelection = TRUE) %>%
+  visInteraction(dragNodes = TRUE,
+                 hover = TRUE,
+                 hoverConnectedEdges = TRUE,
+                 multiselect = TRUE) %>%
+  visLegend(addEdges = ledges, addNodes = lnodes, useGroups = FALSE, width = 0.12, position = "left")
 
 ```
  
