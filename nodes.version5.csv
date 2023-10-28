@@ -22,14 +22,17 @@ Bathsheba Benedict,Person,"Benefactor,Founder",,Benedict College
 Benjamin Franklin Neves,Person,"Benefactor,Key Figure",,North Greenville University
 Benjamin Franklin Wilson,Person,President,,Converse University
 Benjamin Perry Robertson,Person,Key Figure,,North Greenville University
-Benjamin Ryan Tillman,Person,Board Member,"Legislator,Governor","Clemson University,South Carolina State University"
+Benjamin Ryan Tillman,Person,Board Member,"Legislator,Governor",Clemson University
+Benjamin Ryan Tillman,Person,Key Figure,"Legislator,Governor",South Carolina State University
+Benjamin Ryan Tillman,Person,Key Figure,"Legislator,Governor",Winthrop University
 Benjamin S. Screven,Person,Board Member,Legislator,Furman University
 Benjamin Smith,Person,Benefactor,Legislator,College of Charleston
 Benjamin Wofford,Person,"Benefactor,Founder",,Wofford College
 C.F. Bergman,Person,Board Member,,Lutheran Theological Southern Seminary
 C.J. Colcock,Person,Board Member,Legislator,Medical University of South Carolina
 Charles Betts,Person,Board Member,,Wofford College
-Charles C. Pinckney,Person,Board Member,"Foreign Ambassador,Founding Father,Legislator","University of South Carolina,College of Charleston"
+Charles C. Pinckney,Person,Board Member,"Foreign Ambassador,Founding Father,Legislator",University of South Carolina
+Charles C. Pinckney,Person,Board Member,"Foreign Ambassador,Founding Father,Legislator",College of Charleston
 Charles D. Mallary,Person,Board Member,,Furman University
 Charles Drayton,Person,Board Member,"Lt Governor,Legislator",College of Charleston
 Charles Edwin Fleming,Person,Board Member,,Converse University
@@ -41,7 +44,7 @@ Colin Murchison,Person,Board Member,,Columbia College
 D. Picket,Person,Board Member,,Allen University
 D.E. Dunlap,Person,Board Member,,University of South Carolina
 D.J. Bradham,Person,"Key Figure,Board Member",,South Carolina State University
-D.M. Blackwelder,Person,President,,
+D.M. Blackwelder,Person,President,,Medical University of South Carolina
 D.M. Pierce,Person,Board Member,,Benedict College
 D.S. Rice,Person,Board Member,,Allen University
 Daniel Alexander Payne,Person,"Key Figure,Board Member",,Allen University
@@ -53,12 +56,13 @@ David Bancroft Johnson,Person,"Key Figure,Founder,President",,Winthrop Universit
 David Jamison,Person,Board Member,Legislator,The Citadel
 David Oliphant,Person,Board Member,Legislator,College of Charleston
 David Ramsay,Person,Board Member,Legislator,College of Charleston
+David Ramsay,Person,Key Figure,Legislator,Medical University of South Carolina
 David Robinson Duncan,Person,Board Member,Legislator,Converse University
 Dexter Edgar Converse,Person,"Benefactor,Founder,Board Member",,Converse University
 Elias Ball Hort,Person,Board Member,Legislator,Newberry College
 E.C. Leitner,Person,Board Member,Legislator,Wofford College
 E.R. Roberts,Person,Board Member,,Benedict College
-E.S. Joynes,Person,Board Member,,
+E.S. Joynes,Person,Board Member,,Winthrop University
 E.T. Copeland,Person,Board Member,,Presbyterian College
 Eli Thomas Stackhouse,Person,Board Member,Legislator,Clemson University
 Ebenezer Erskine Pressly,Person,"Key Figure,President,Namesake,Board Member",,Erskine College
@@ -77,12 +81,12 @@ George W. Kelley,Person,Board Member,,Voorhees University
 Gerhard Muller,Person,Board Member,Legislator,Newberry College
 Godfrey Dreher,Person,Board Member,,Lutheran Theological Southern Seminary
 H. Aubrey Strode,Person,President,,Clemson University
-H. Bass,Person,Board Member,,
+H. Bass,Person,Board Member,,Wofford College
 H.A. DeSaussure,Person,Board Member,,Medical University of South Carolina
 H.A.C. Walker,Person,Board Member,,Wofford College
 H.B. Crawley,Person,Board Member,,North Greenville University
 H.H. Durant,Person,Board Member,,Wofford College
-H.H. Thomson,Person,Board Member,Legislator,
+H.H. Thomson,Person,Board Member,Legislator,Wofford College
 H.K. Ezell,Person,Board Member,,North Greenville University
 H.P. Goodwin,Person,Board Member,,North Greenville University
 Harvey Wofford,Person,Board Member,,Wofford College
@@ -116,12 +120,13 @@ Jesse Havries Hardin,Person,Board Member,Legislator,Clemson University
 J.H. Kellogg,Person,Board Member,,Voorhees University
 J.H. Means,Person,Board Member,Governor,The Citadel
 J.H. Phinney,Person,Board Member,,Presbyterian College
-J.H. Wheeler,Person,Board Member,,
+J.H. Wheeler,Person,Board Member,,Wofford College
 J.H. Young,Person,Board Member,Legislator,Presbyterian College
 James L. Orr,Person,Board Member,"Governor's Staff,Legislator",Clemson University
 J.P. Aull,Person,Board Member,,Newberry College
 J.P. Margart,Person,Board Member,,Newberry College
-J.P. Richardson,Person,Key Figure,"Governor,Legislator","Winthrop University,Clemson University"
+J.P. Richardson,Person,Key Figure,"Governor,Legislator",Clemson University
+J.P. Richardson,Person,Board Member,,Winthrop University
 "J.W. Copeland, Sr.",Person,Board Member,,Presbyterian College
 J.W. Floyd,Person,Key Figure,Legislator,South Carolina State University
 Jacob Ford,Person,Board Member,,Medical University of South Carolina
@@ -143,7 +148,8 @@ Job J. Boozer,Person,Board Member,,Presbyterian College
 John A. Porter,Person,Board Member,,Columbia College
 John B. Boazman,Person,Board Member,,Lander University
 John B. Cleveland,Person,Board Member,,Converse University
-John Bachman,Person,"Founder,Key Figure,Board Member",,"Lutheran Theological Southern Seminary,Newberry College"
+John Bachman,Person,"Key Figure,Board Member",,Lutheran Theological Southern Seminary
+John Bachman,Person,"Key Figure,Board Member",,Newberry College
 John Brown,Person,Board Member,,University of South Carolina
 John Bryce,Person,Board Member,,Columbia College
 John C. Hope,Person,Board Member,Legislator,Lutheran Theological Southern Seminary
@@ -162,8 +168,8 @@ John MacKenzie,Person,Benefactor,,College of Charleston
 John Matthews,Person,Board Member,Governor,College of Charleston
 John P. Kinard,Person,Board Member,Legislator,Newberry College
 John P. Richardson,Person,"Key Figure,Founder","Governor,Legislator",The Citadel
-"John P. Thomas, Jr.",Person,Board Member,,
-John Porter,Person,Board Member,,
+"John P. Thomas, Jr.",Person,Board Member,,Winthrop University
+John Porter,Person,Board Member,,Wofford College
 John Prue,Person,Benefactor,,College of Charleston
 John Rutledge,Person,Board Member,"Founding Father,Judge,Governor,Legislator",College of Charleston
 John T. Wightman,Person,Board Member,,Columbia College
@@ -223,7 +229,6 @@ Robert J. Boyd,Person,Board Member,,Columbia College
 Robert J. Turnbull,Person,Board Member,,Medical University of South Carolina
 Robert Kingston Scott,Person,Board Member,Governor,Claflin University
 Robert Smith,Person,"Board Member,President",,College of Charleston
-S.G. Mayfield,Person,"Key Figure,Board Member",Legislator,South Carolina State University
 S.L. West,Person,Board Member,,Presbyterian College
 S.S. McCully,Person,Board Member,,Columbia College
 Samuel Lander,Person,"Key Figure,Founder",,Lander University
@@ -236,6 +241,7 @@ Simeon Corley,Person,Board Member,,Claflin University
 Simeon Fair,Person,Board Member,,Newberry College
 Simpson Bobo,Person,Board Member,,Wofford College
 Stanwix G. Mayfield,Person,"Key Figure,Board Member",Legislator,Voorhees University
+Stanwix G. Mayfield,Person,"Key Figure,Board Member",Legislator,South Carolina State University
 Stephen A. Mealy,Person,Board Member,,Lutheran Theological Southern Seminary
 Stephen Benedict,Person,"Key Figure,Namesake",,Benedict College
 T.R. Walsh,Person,Board Member,,Wofford College
@@ -243,7 +249,7 @@ T.S. Boinest,Person,Board Member,,Newberry College
 T.W. Lewis,Person,Board Member,,Claflin University
 Theophilus Stork,Person,President,,Newberry College
 Thomas Bee,Person,Board Member,"Judge,Legislator",College of Charleston
-Thomas Curtis,Person,,,Limestone University
+Thomas Curtis,Person,"Founder,President",,Limestone University
 Thomas Green Clemson,Person,"Benefactor,Founder",Foreign Ambassador,Clemson University
 Thomas H. Wade,Person,Board Member,,Columbia College
 "Thomas Heyward, Jr.",Person,Board Member,"Founding Father,Legislator",College of Charleston
@@ -251,11 +257,11 @@ Thomas Miller,Person,"President,Key Figure,Founder",Legislator,South Carolina St
 Thomas Philips,Person,Board Member,,Claflin University
 Thomas Taylor,Person,Board Member,Legislator,University of South Carolina
 Timothy Dargan,Person,Board Member,Legislator,Furman University
-Timothy Dodge,Person,,,Benedict College
+Timothy Dodge,Person,President,,Benedict College
 Timothy W. Lewis,Person,Key Figure,,Claflin University
 Unknown Torrence,Person,Board Member,,Allen University
 Unknown Weston,Person,Board Member,,Allen University
-W. Barringer,Person,Board Member,,
+W. Barringer,Person,Board Member,,Wofford College
 W. Edgar Owens,Person,Board Member,,Presbyterian College
 W.A. Gamewell,Person,Board Member,,Wofford College
 W.A. McCorkle,Person,Board Member,,Lander University
@@ -266,7 +272,7 @@ W.B. Sterrett,Person,Board Member,,Allen University
 W.C. Lindsay,Person,Board Member,,Benedict College
 W.C. Swaffield,Person,Board Member,,Winthrop University
 W.J. Alexander,Person,Board Member,,Benedict College
-W.J. Duffie,Person,Board Member,,
+W.J. Duffie,Person,Board Member,,Winthrop University
 W.J. Hanna,Person,Board Member,,The Citadel
 W.K. Bachman,Person,Board Member,Legislator,Newberry College
 W.L. Prince,Person,Board Member,,Lander University
@@ -294,6 +300,7 @@ William Martin,Person,Board Member,,Columbia College
 William Moultrie,Person,Board Member,"Governor,Legislator",College of Charleston
 William Plumer Jacobs,Person,"Founder,Board Member",,Presbyterian College
 William Sinkler Manning,Person,Board Member,,Converse University
+William States Lee,Person,President,,Presbyterian College
 Allen University,Institution,,,
 Benedict College,Institution,,,
 Claflin University,Institution,,,
@@ -316,4 +323,3 @@ University of South Carolina,Institution,,,
 Voorhees University,Institution,,,
 Winthrop University,Institution,,,
 Wofford College,Institution,,,
-William States Lee,,President,,Presbyterian College

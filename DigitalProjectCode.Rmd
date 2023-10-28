@@ -32,29 +32,29 @@ library(tidyr)
 
 ````{r, message=FALSE, warning=FALSE, echo=FALSE}
 #Create edges and nodes from CSV files
-edges <- read.csv("edges.version4.csv", stringsAsFactors = FALSE) 
+edges <- read.csv("edges.version5.csv", stringsAsFactors = FALSE) 
 edges <- as.data.frame(edges)
 
-nodes <- read.csv("nodes.version4.csv", stringsAsFactors = FALSE) 
+nodes <- read.csv("nodes.version5.csv", stringsAsFactors = FALSE) 
 nodes <- as.data.frame(nodes)
 ````
 
 ````{r, message=FALSE, warning=FALSE, echo=FALSE}
 #Create a column assigning colors to institutional relationships like President and Board Member
 edges <- edges %>%
-  mutate(title = edges$Relationship[1:319]) %>%
-  mutate(color = ifelse(edges$Relationship == "Benefactor", "green",
-                        ifelse(edges$Relationship == "Board Member", "blue",
-                               ifelse(edges$Relationship == "President", "darkred",
-                                      ifelse(edges$Relationship == "Key Figure", "hotpink",
-                                                                                       ifelse(edges$Relationship == "Founder", "purple",
-                                                                                              ifelse(edges$Relationship == "Namesake", "turquoise", "gray")))))))
+  mutate(title = edges$Institution.Roles[1:302]) %>%
+  mutate(color = ifelse(edges$Institution.Roles == "Benefactor", "green",
+                        ifelse(edges$Institution.Roles == "Board Member", "blue",
+                               ifelse(edges$Institution.Roles == "President", "darkred",
+                                      ifelse(edges$Institution.Roles == "Key Figure", "hotpink",
+                                                                                       ifelse(edges$Institution.Roles == "Founder", "purple",
+                                                                                              ifelse(edges$Institution.Roles == "Namesake", "turquoise", "gray")))))))
 ````
 
 ````{r, message=FALSE, warning=FALSE, echo=FALSE}
-#Customize the nodes by color in network. Nodes are all of the people and each of the 22 institutions. Total of 318 nodes.
+#Customize the nodes by color in network. Nodes are all of the people and each of the 22 institutions. Total of 324 nodes.
 nodes <- nodes %>%
-  mutate(title = (nodes$ID[1:318])) %>%
+  mutate(title = (nodes$ID[1:324])) %>%
   mutate(color = ifelse(nodes$Type == "Person", "navy",
                         ifelse(nodes$Type == "Institution", "purple", "tan")))
                                
@@ -76,7 +76,7 @@ lnodes <- data.frame(label = c("Person", "Institution"),
 ```{r, echo=FALSE}
 #Create network visualization
 edges <- edges %>% rename(from = from, to = to)
-nodes <- nodes %>% rename(from = ID, to = id)
+
 visNetwork(nodes = nodes, edges = edges, height = 650, width = 1100) %>%
   visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
   visNodes(size = 8, 
