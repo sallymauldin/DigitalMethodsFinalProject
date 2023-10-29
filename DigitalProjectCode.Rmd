@@ -54,7 +54,7 @@ edges <- edges %>%
 ````{r, message=FALSE, warning=FALSE, echo=FALSE}
 #Customize the nodes by color in network. Nodes are all of the people and each of the 22 institutions. Total of 324 nodes.
 nodes <- nodes %>%
-  mutate(title = (nodes$ID[1:324])) %>%
+  mutate(title = (nodes$id[1:317])) %>%
   mutate(color = ifelse(nodes$Type == "Person", "navy",
                         ifelse(nodes$Type == "Institution", "purple", "tan")))
                                
@@ -75,7 +75,8 @@ lnodes <- data.frame(label = c("Person", "Institution"),
 
 ```{r, echo=FALSE}
 #Create network visualization
-edges <- edges %>% rename(from = from, to = to)
+edges <- edges %>% rename(from = ID, to = ID.1)
+
 
 visNetwork(nodes = nodes, edges = edges, height = 650, width = 1100) %>%
   visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 

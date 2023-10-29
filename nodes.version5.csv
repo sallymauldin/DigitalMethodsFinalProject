@@ -1,4 +1,4 @@
-﻿ID,Type,Relationship,Political.Roles,Institution
+﻿id,Type,Relationship,Political.Roles,Institution
 A. Webster,Person,Board Member,,Claflin University
 A.C. Garlington,Person,Board Member,Legislator,Newberry College
 A.C. Hawthorne,Person,Board Member,,Erskine College
@@ -23,8 +23,6 @@ Benjamin Franklin Neves,Person,"Benefactor,Key Figure",,North Greenville Univers
 Benjamin Franklin Wilson,Person,President,,Converse University
 Benjamin Perry Robertson,Person,Key Figure,,North Greenville University
 Benjamin Ryan Tillman,Person,Board Member,"Legislator,Governor",Clemson University
-Benjamin Ryan Tillman,Person,Key Figure,"Legislator,Governor",South Carolina State University
-Benjamin Ryan Tillman,Person,Key Figure,"Legislator,Governor",Winthrop University
 Benjamin S. Screven,Person,Board Member,Legislator,Furman University
 Benjamin Smith,Person,Benefactor,Legislator,College of Charleston
 Benjamin Wofford,Person,"Benefactor,Founder",,Wofford College
@@ -32,7 +30,6 @@ C.F. Bergman,Person,Board Member,,Lutheran Theological Southern Seminary
 C.J. Colcock,Person,Board Member,Legislator,Medical University of South Carolina
 Charles Betts,Person,Board Member,,Wofford College
 Charles C. Pinckney,Person,Board Member,"Foreign Ambassador,Founding Father,Legislator",University of South Carolina
-Charles C. Pinckney,Person,Board Member,"Foreign Ambassador,Founding Father,Legislator",College of Charleston
 Charles D. Mallary,Person,Board Member,,Furman University
 Charles Drayton,Person,Board Member,"Lt Governor,Legislator",College of Charleston
 Charles Edwin Fleming,Person,Board Member,,Converse University
@@ -56,7 +53,6 @@ David Bancroft Johnson,Person,"Key Figure,Founder,President",,Winthrop Universit
 David Jamison,Person,Board Member,Legislator,The Citadel
 David Oliphant,Person,Board Member,Legislator,College of Charleston
 David Ramsay,Person,Board Member,Legislator,College of Charleston
-David Ramsay,Person,Key Figure,Legislator,Medical University of South Carolina
 David Robinson Duncan,Person,Board Member,Legislator,Converse University
 Dexter Edgar Converse,Person,"Benefactor,Founder,Board Member",,Converse University
 Elias Ball Hort,Person,Board Member,Legislator,Newberry College
@@ -126,7 +122,6 @@ James L. Orr,Person,Board Member,"Governor's Staff,Legislator",Clemson Universit
 J.P. Aull,Person,Board Member,,Newberry College
 J.P. Margart,Person,Board Member,,Newberry College
 J.P. Richardson,Person,Key Figure,"Governor,Legislator",Clemson University
-J.P. Richardson,Person,Board Member,,Winthrop University
 "J.W. Copeland, Sr.",Person,Board Member,,Presbyterian College
 J.W. Floyd,Person,Key Figure,Legislator,South Carolina State University
 Jacob Ford,Person,Board Member,,Medical University of South Carolina
@@ -149,7 +144,6 @@ John A. Porter,Person,Board Member,,Columbia College
 John B. Boazman,Person,Board Member,,Lander University
 John B. Cleveland,Person,Board Member,,Converse University
 John Bachman,Person,"Key Figure,Board Member",,Lutheran Theological Southern Seminary
-John Bachman,Person,"Key Figure,Board Member",,Newberry College
 John Brown,Person,Board Member,,University of South Carolina
 John Bryce,Person,Board Member,,Columbia College
 John C. Hope,Person,Board Member,Legislator,Lutheran Theological Southern Seminary
@@ -241,7 +235,6 @@ Simeon Corley,Person,Board Member,,Claflin University
 Simeon Fair,Person,Board Member,,Newberry College
 Simpson Bobo,Person,Board Member,,Wofford College
 Stanwix G. Mayfield,Person,"Key Figure,Board Member",Legislator,Voorhees University
-Stanwix G. Mayfield,Person,"Key Figure,Board Member",Legislator,South Carolina State University
 Stephen A. Mealy,Person,Board Member,,Lutheran Theological Southern Seminary
 Stephen Benedict,Person,"Key Figure,Namesake",,Benedict College
 T.R. Walsh,Person,Board Member,,Wofford College
