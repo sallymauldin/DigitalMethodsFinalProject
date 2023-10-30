@@ -45,18 +45,33 @@ edges <- edges %>%
   mutate(title = edges$Institution.Roles[1:302]) %>%
   mutate(color = ifelse(edges$Institution.Roles == "Benefactor", "green",
                         ifelse(edges$Institution.Roles == "Board Member", "blue",
-                               ifelse(edges$Institution.Roles == "President", "darkred",
-                                      ifelse(edges$Institution.Roles == "Key Figure", "hotpink",
+                               ifelse(edges$Institution.Roles == "President", "red",
+                                      ifelse(edges$Institution.Roles == "Key Figure", "darkgreen",
                                                                                        ifelse(edges$Institution.Roles == "Founder", "purple",
                                                                                               ifelse(edges$Institution.Roles == "Namesake", "turquoise", "gray")))))))
 ````
 
 ````{r, message=FALSE, warning=FALSE, echo=FALSE}
-#Customize the nodes by color in network. Nodes are all of the people and each of the 22 institutions. Total of 324 nodes.
+#Customize the nodes by color in network. Nodes are all of the people and each of the 22 institutions. Total of 317 nodes.
 nodes <- nodes %>%
+  mutate(shape = ifelse(nodes$Political.Roles == "Legislator", "square",
+                        ifelse(nodes$Political.Roles == "Founding Father,Legislator", "diamond",
+                               ifelse(nodes$Political.Roles == "Legislator,Governor", "triangle",
+                                      ifelse(nodes$Political.Roles == "Foreign Ambassador,Founding Father,Legislator", "diamond",
+                                             ifelse(nodes$Political.Roles == "Lt. Governor,Legislator", "square",
+                                                    ifelse(nodes$Political.Roles == "Founding Father,Governor,Legislator", "diamond",
+                                                           ifelse(nodes$Political.Roles == "Governor,Legislator", "triangle",
+                                                                  ifelse(nodes$Political.Roles == "Governor's Staff,Legislator", "square",
+                                                                         ifelse(nodes$Political.Roles == "Governor", "star",
+                                                                                ifelse(nodes$Political.Roles == "Founding Father,Judge,Governor,Legislator", "diamond",
+                                                                                       ifelse(nodes$Political.Roles == "Foreign Ambassador,Legislator", "square",
+                                                                                              ifelse(nodes$Political.Roles == "Legislator,Governor's Staff", "square",
+                                                                                                     ifelse(nodes$Political.Roles == "Judge,Legislator", "square",
+                                                                                                            ifelse(nodes$Political.Roles == "Foreign Ambassador", "open oval", "circle"
+                                                                              )))))))))))))))%>%
   mutate(title = (nodes$id[1:317])) %>%
   mutate(color = ifelse(nodes$Type == "Person", "navy",
-                        ifelse(nodes$Type == "Institution", "purple", "tan")))
+                        ifelse(nodes$Type == "Institution", "orange", "tan")))
                                
       
 ````
@@ -64,11 +79,11 @@ nodes <- nodes %>%
 
 ```{r}
 #Make data frames for edge and node legends
-ledges <- data.frame(color = c("green", "blue", "darkred", "hotpink", "purple", "turquoise"),
+ledges <- data.frame(color = c("green", "blue", "red", "darkgreen", "purple", "turquoise"),
                      label = c("Benefactor", "Board Member", "President", "Key Figure", "Founder", "Namesake"))
 
 lnodes <- data.frame(label = c("Person", "Institution"),
-                    color = c("navy", "purple"),
+                    color = c("navy", "orange"),
                    ID = 1:2) 
 ```
 
@@ -80,13 +95,13 @@ edges <- edges %>% rename(from = ID, to = ID.1)
 
 visNetwork(nodes = nodes, edges = edges, height = 650, width = 1100) %>%
   visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
-  visNodes(size = 8, 
-           label = paste(nodes$ID),
+  visNodes(size = 36, 
+           label = paste(nodes$id),
            title = title,
-           font = list("size" = 10)) %>%
+           font = list("size" = 20)) %>%
   visEdges(color = list(color = edges$color, opacity = 0.2),
-           hoverWidth = 1,
-           selectionWidth = 6) 
+           hoverWidth = 20,
+           selectionWidth = 36) 
 
 
 ```
