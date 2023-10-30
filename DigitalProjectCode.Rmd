@@ -74,6 +74,370 @@ nodes <- nodes %>%
       
 ````
 
+```{r}
+#Filter by private institutions
+
+nodes.private <- nodes %>%
+  filter(Type.1 == "Private")
+
+ledges.private <- data.frame(color = c("green", "blue", "red", "darkgreen", "purple", "turquoise"),
+                     label = c("Benefactor", "Board Member", "President", "Key Figure", "Founder", "Namesake"))
+
+lnodes.private <- data.frame(label = c("Person", "Institution"),
+                    color = c("navy", "orange"),
+                   ID = 1:2) 
+
+edges <- edges %>% rename(from = ID, to = ID.1)
+
+
+visNetwork(nodes = nodes.private, edges = edges, height = 650, width = 1100) %>%
+  visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
+  visNodes(size = 36, 
+           label = paste(nodes.private$id),
+           title = title,
+           font = list("size" = 20)) %>%
+  visEdges(color = list(color = edges$color, opacity = 0.2),
+           hoverWidth = 20,
+           selectionWidth = 36)
+```
+```{r}
+#Filter by public institutions
+nodes.public <- nodes %>%
+  filter(Type.1 == "Public" | Type.1 == "Proprietary")
+
+ledges.public <- data.frame(color = c("green", "blue", "red", "darkgreen", "purple", "turquoise"),
+                     label = c("Benefactor", "Board Member", "President", "Key Figure", "Founder", "Namesake"))
+
+lnodes.public <- data.frame(label = c("Person", "Institution"),
+                    color = c("navy", "orange"),
+                   ID = 1:2) 
+
+edges <- edges %>% rename(from = from, to = to)
+
+
+visNetwork(nodes = nodes.public, edges = edges, height = 650, width = 1100) %>%
+  visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
+  visNodes(size = 36, 
+           label = paste(nodes.public$id),
+           title = title,
+           font = list("size" = 20)) %>%
+  visEdges(color = list(color = edges$color, opacity = 0.2),
+           hoverWidth = 20,
+           selectionWidth = 36)
+```
+```{r}
+#Filter by HBCU institutions
+
+nodes.hbcu <- nodes %>%
+  filter(HBCU == "TRUE")
+
+ledges.HBCU <- data.frame(color = c("green", "blue", "red", "darkgreen", "purple", "turquoise"),
+                     label = c("Benefactor", "Board Member", "President", "Key Figure", "Founder", "Namesake"))
+
+lnodes.HBCU <- data.frame(label = c("Person", "Institution"),
+                    color = c("navy", "orange"),
+                   ID = 1:2) 
+
+edges <- edges %>% rename(from = from, to = to)
+
+
+visNetwork(nodes = nodes.hbcu, edges = edges, height = 650, width = 1100) %>%
+  visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
+  visNodes(size = 36, 
+           label = paste(nodes.hbcu$id),
+           title = title,
+           font = list("size" = 20)) %>%
+  visEdges(color = list(color = edges$color, opacity = 0.2),
+           hoverWidth = 20,
+           selectionWidth = 36)
+```
+```{r}
+#Filter by religious institutions
+
+nodes.religious <- nodes %>%
+  filter(Religious == "TRUE")
+
+ledges.religious <- data.frame(color = c("green", "blue", "red", "darkgreen", "purple", "turquoise"),
+                     label = c("Benefactor", "Board Member", "President", "Key Figure", "Founder", "Namesake"))
+
+lnodes.religious <- data.frame(label = c("Person", "Institution"),
+                    color = c("navy", "orange"),
+                   ID = 1:2) 
+
+edges <- edges %>% rename(from = from, to = to)
+
+
+visNetwork(nodes = nodes.religious, edges = edges, height = 650, width = 1100) %>%
+  visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
+  visNodes(size = 36, 
+           label = paste(nodes.religious$id),
+           title = title,
+           font = list("size" = 20)) %>%
+  visEdges(color = list(color = edges$color, opacity = 0.2),
+           hoverWidth = 20,
+           selectionWidth = 36)
+```
+```{r}
+#Filter by female institutions
+
+nodes.female <- nodes %>%
+  filter(Female == "TRUE")
+
+ledges.female <- data.frame(color = c("green", "blue", "red", "darkgreen", "purple", "turquoise"),
+                     label = c("Benefactor", "Board Member", "President", "Key Figure", "Founder", "Namesake"))
+
+lnodes.female <- data.frame(label = c("Person", "Institution"),
+                    color = c("navy", "orange"),
+                   ID = 1:2) 
+
+edges <- edges %>% rename(from = from, to = to)
+
+
+visNetwork(nodes = nodes.female, edges = edges, height = 650, width = 1100) %>%
+  visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
+  visNodes(size = 36, 
+           label = paste(nodes.female$id),
+           title = title,
+           font = list("size" = 20)) %>%
+  visEdges(color = list(color = edges$color, opacity = 0.2),
+           hoverWidth = 20,
+           selectionWidth = 36)
+```
+```{r}
+#Filter by military institutions
+
+nodes.military <- nodes %>%
+  filter(Military == "TRUE")
+
+ledges.military <- data.frame(color = c("green", "blue", "red", "darkgreen", "purple", "turquoise"),
+                     label = c("Benefactor", "Board Member", "President", "Key Figure", "Founder", "Namesake"))
+
+lnodes.military <- data.frame(label = c("Person", "Institution"),
+                    color = c("navy", "orange"),
+                   ID = 1:2) 
+
+edges <- edges %>% rename(from = from, to = to)
+
+
+visNetwork(nodes = nodes.military, edges = edges, height = 650, width = 1100) %>%
+  visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
+  visNodes(size = 36, 
+           label = paste(nodes.military$id),
+           title = title,
+           font = list("size" = 20)) %>%
+  visEdges(color = list(color = edges$color, opacity = 0.2),
+           hoverWidth = 20,
+           selectionWidth = 36)
+```
+```{r}
+#Filter by integrated institutions
+
+nodes.integrated <- nodes %>%
+  filter(Integrated == "TRUE")
+
+ledges.integrated <- data.frame(color = c("green", "blue", "red", "darkgreen", "purple", "turquoise"),
+                     label = c("Benefactor", "Board Member", "President", "Key Figure", "Founder", "Namesake"))
+
+lnodes.integrated <- data.frame(label = c("Person", "Institution"),
+                    color = c("navy", "orange"),
+                   ID = 1:2) 
+
+edges <- edges %>% rename(from = from, to = to)
+
+
+visNetwork(nodes = nodes.integrated, edges = edges, height = 650, width = 1100) %>%
+  visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
+  visNodes(size = 36, 
+           label = paste(nodes.integrated$id),
+           title = title,
+           font = list("size" = 20)) %>%
+  visEdges(color = list(color = edges$color, opacity = 0.2),
+           hoverWidth = 20,
+           selectionWidth = 36)
+```
+```{r}
+#Filter by co-educational institutions
+
+nodes.coed <- nodes %>%
+  filter(Co.Educational == "TRUE")
+
+ledges.coed <- data.frame(color = c("green", "blue", "red", "darkgreen", "purple", "turquoise"),
+                     label = c("Benefactor", "Board Member", "President", "Key Figure", "Founder", "Namesake"))
+
+lnodes.coed <- data.frame(label = c("Person", "Institution"),
+                    color = c("navy", "orange"),
+                   ID = 1:2) 
+
+edges <- edges %>% rename(from = from, to = to)
+
+
+visNetwork(nodes = nodes.coed, edges = edges, height = 650, width = 1100) %>%
+  visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
+  visNodes(size = 36, 
+           label = paste(nodes.coed$id),
+           title = title,
+           font = list("size" = 20)) %>%
+  visEdges(color = list(color = edges$color, opacity = 0.2),
+           hoverWidth = 20,
+           selectionWidth = 36)
+```
+```{r}
+#Filter by land grant institutions
+
+nodes.landgrant <- nodes %>%
+  filter(Land_Grant == "TRUE")
+
+ledges.landgrant <- data.frame(color = c("green", "blue", "red", "darkgreen", "purple", "turquoise"),
+                     label = c("Benefactor", "Board Member", "President", "Key Figure", "Founder", "Namesake"))
+
+lnodes.landgrant <- data.frame(label = c("Person", "Institution"),
+                    color = c("navy", "orange"),
+                   ID = 1:2) 
+
+edges <- edges %>% rename(from = from, to = to)
+
+
+visNetwork(nodes = nodes.landgrant, edges = edges, height = 650, width = 1100) %>%
+  visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
+  visNodes(size = 36, 
+           label = paste(nodes.landgrant$id),
+           title = title,
+           font = list("size" = 20)) %>%
+  visEdges(color = list(color = edges$color, opacity = 0.2),
+           hoverWidth = 20,
+           selectionWidth = 36)
+```
+```{r}
+#Filter by upstate region
+
+nodes.upstate <- nodes %>%
+  filter(Region == "Upstate")
+
+ledges.upstate <- data.frame(color = c("green", "blue", "red", "darkgreen", "purple", "turquoise"),
+                     label = c("Benefactor", "Board Member", "President", "Key Figure", "Founder", "Namesake"))
+
+lnodes.upstate <- data.frame(label = c("Person", "Institution"),
+                    color = c("navy", "orange"),
+                   ID = 1:2) 
+
+edges <- edges %>% rename(from = from, to = to)
+
+
+visNetwork(nodes = nodes.upstate, edges = edges, height = 650, width = 1100) %>%
+  visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
+  visNodes(size = 36, 
+           label = paste(nodes.upstate$id),
+           title = title,
+           font = list("size" = 20)) %>%
+  visEdges(color = list(color = edges$color, opacity = 0.2),
+           hoverWidth = 20,
+           selectionWidth = 36)
+```
+```{r}
+#Filter by midlands region
+
+nodes.midlands <- nodes %>%
+  filter(Region == "Midlands")
+
+ledges.midlands <- data.frame(color = c("green", "blue", "red", "darkgreen", "purple", "turquoise"),
+                     label = c("Benefactor", "Board Member", "President", "Key Figure", "Founder", "Namesake"))
+
+lnodes.midlands <- data.frame(label = c("Person", "Institution"),
+                    color = c("navy", "orange"),
+                   ID = 1:2) 
+
+edges <- edges %>% rename(from = from, to = to)
+
+
+visNetwork(nodes = nodes.midlands, edges = edges, height = 650, width = 1100) %>%
+  visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
+  visNodes(size = 36, 
+           label = paste(nodes.midlands$id),
+           title = title,
+           font = list("size" = 20)) %>%
+  visEdges(color = list(color = edges$color, opacity = 0.2),
+           hoverWidth = 20,
+           selectionWidth = 36)
+```
+```{r}
+#Filter by lowcountry region
+
+nodes.lowcountry <- nodes %>%
+  filter(Region == "Lowcountry")
+
+ledges.lowcountry <- data.frame(color = c("green", "blue", "red", "darkgreen", "purple", "turquoise"),
+                     label = c("Benefactor", "Board Member", "President", "Key Figure", "Founder", "Namesake"))
+
+lnodes.lowcountry <- data.frame(label = c("Person", "Institution"),
+                    color = c("navy", "orange"),
+                   ID = 1:2) 
+
+edges <- edges %>% rename(from = from, to = to)
+
+
+visNetwork(nodes = nodes.lowcountry, edges = edges, height = 650, width = 1100) %>%
+  visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
+  visNodes(size = 36, 
+           label = paste(nodes.lowcountry$id),
+           title = title,
+           font = list("size" = 20)) %>%
+  visEdges(color = list(color = edges$color, opacity = 0.2),
+           hoverWidth = 20,
+           selectionWidth = 36)
+```
+```{r}
+#Filter by year founded - antebellum version
+
+nodes.antebellumfounding <- nodes %>%
+  filter(Year_Founded %in% (1770:1856))
+
+ledges.antebellumfounding <- data.frame(color = c("green", "blue", "red", "darkgreen", "purple", "turquoise"),
+                     label = c("Benefactor", "Board Member", "President", "Key Figure", "Founder", "Namesake"))
+
+lnodes.antebellumfounding <- data.frame(label = c("Person", "Institution"),
+                    color = c("navy", "orange"),
+                   ID = 1:2) 
+
+edges <- edges %>% rename(from = from, to = to)
+
+
+visNetwork(nodes = nodes.antebellumfounding, edges = edges, height = 650, width = 1100) %>%
+  visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
+  visNodes(size = 36, 
+           label = paste(nodes.antebellumfounding$id),
+           title = title,
+           font = list("size" = 20)) %>%
+  visEdges(color = list(color = edges$color, opacity = 0.2),
+           hoverWidth = 20,
+           selectionWidth = 36)
+```
+```{r}
+#Filter by year founded - Reconstruction and after
+
+nodes.reconstructionfounding <- nodes %>%
+  filter(Year_Founded %in% (1865:1900))
+
+ledges.reconstructionfounding <- data.frame(color = c("green", "blue", "red", "darkgreen", "purple", "turquoise"),
+                     label = c("Benefactor", "Board Member", "President", "Key Figure", "Founder", "Namesake"))
+
+lnodes.reconstructionfounding <- data.frame(label = c("Person", "Institution"),
+                    color = c("navy", "orange"),
+                   ID = 1:2) 
+
+edges <- edges %>% rename(from = from, to = to)
+
+
+visNetwork(nodes = nodes.reconstructionfounding, edges = edges, height = 650, width = 1100) %>%
+  visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
+  visNodes(size = 36, 
+           label = paste(nodes.reconstructionfounding$id),
+           title = title,
+           font = list("size" = 20)) %>%
+  visEdges(color = list(color = edges$color, opacity = 0.2),
+           hoverWidth = 20,
+           selectionWidth = 36)
+```
+
 
 ```{r}
 #Make data frames for edge and node legends
@@ -88,7 +452,7 @@ lnodes <- data.frame(label = c("Person", "Institution"),
 
 ```{r, echo=FALSE}
 #Create network visualization
-edges <- edges %>% rename(from = ID, to = ID.1)
+edges <- edges %>% rename(from = from, to = to)
 
 
 visNetwork(nodes = nodes, edges = edges, height = 650, width = 1100) %>%
