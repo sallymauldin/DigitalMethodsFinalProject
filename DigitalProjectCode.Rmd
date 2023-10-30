@@ -35,7 +35,7 @@ library(tidyr)
 edges <- read.csv("edges.version5.csv", stringsAsFactors = FALSE) 
 edges <- as.data.frame(edges)
 
-nodes <- read.csv("nodes.version5.csv", stringsAsFactors = FALSE) 
+nodes <- read.csv("nodes.version6.csv", stringsAsFactors = FALSE) 
 nodes <- as.data.frame(nodes)
 ````
 
