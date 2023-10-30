@@ -18,9 +18,7 @@ h6 { /* Header 6 */
 ### Network of Colleges and Universities in South Carolina in the 19th Century
 
 This visualization is a network of individuals associated with 22 higher education institutions in South Carolina in the 19th century. Each icon (node) represents one college/university, and the connections (edges) between icons indicate known associations, such as founders, presidents, and board members. 
-```{r setup, include=FALSE}
-#knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 #Load libraries
