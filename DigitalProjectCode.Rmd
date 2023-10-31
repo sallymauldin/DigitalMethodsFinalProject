@@ -26,6 +26,7 @@ library(visNetwork)
 library(igraph) 
 library(dplyr)
 library(tidyr)
+library(ggplot2)
 ```
 
 ````{r, message=FALSE, warning=FALSE, echo=FALSE}
@@ -70,9 +71,35 @@ nodes <- nodes %>%
   mutate(title = (nodes$id[1:317])) %>%
   mutate(color = ifelse(nodes$Type == "Person", "navy",
                         ifelse(nodes$Type == "Institution", "orange", "tan")))
-                               
-      
-````
+
+```
+
+```{r}
+#Make data frames for edge and node legends
+ledges <- data.frame(color = c("green", "blue", "red", "darkgreen", "purple", "turquoise"),
+                     label = c("Benefactor", "Board Member", "President", "Key Figure", "Founder", "Namesake"))
+
+lnodes <- data.frame(label = c("Person", "Institution"),
+                    color = c("navy", "orange"),
+                   ID = 1:2) 
+```
+
+```{r, echo=FALSE}
+#Create network visualization
+edges <- edges %>% rename(from = ID, to = ID.1)
+
+
+visNetwork(nodes = nodes, edges = edges, height = 650, width = 1100) %>%
+  visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
+  visNodes(size = 36, 
+           label = paste(nodes$id),
+           title = title,
+           font = list("size" = 20)) %>%
+  visEdges(color = list(color = edges$color, opacity = 0.2),
+           hoverWidth = 20,
+           selectionWidth = 36) 
+```
+
 
 ```{r}
 #Filter by private institutions
@@ -86,8 +113,6 @@ ledges.private <- data.frame(color = c("green", "blue", "red", "darkgreen", "pur
 lnodes.private <- data.frame(label = c("Person", "Institution"),
                     color = c("navy", "orange"),
                    ID = 1:2) 
-
-edges <- edges %>% rename(from = ID, to = ID.1)
 
 
 visNetwork(nodes = nodes.private, edges = edges, height = 650, width = 1100) %>%
@@ -111,8 +136,6 @@ ledges.public <- data.frame(color = c("green", "blue", "red", "darkgreen", "purp
 lnodes.public <- data.frame(label = c("Person", "Institution"),
                     color = c("navy", "orange"),
                    ID = 1:2) 
-
-edges <- edges %>% rename(from = from, to = to)
 
 
 visNetwork(nodes = nodes.public, edges = edges, height = 650, width = 1100) %>%
@@ -138,9 +161,6 @@ lnodes.HBCU <- data.frame(label = c("Person", "Institution"),
                     color = c("navy", "orange"),
                    ID = 1:2) 
 
-edges <- edges %>% rename(from = from, to = to)
-
-
 visNetwork(nodes = nodes.hbcu, edges = edges, height = 650, width = 1100) %>%
   visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
   visNodes(size = 36, 
@@ -164,9 +184,6 @@ lnodes.religious <- data.frame(label = c("Person", "Institution"),
                     color = c("navy", "orange"),
                    ID = 1:2) 
 
-edges <- edges %>% rename(from = from, to = to)
-
-
 visNetwork(nodes = nodes.religious, edges = edges, height = 650, width = 1100) %>%
   visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
   visNodes(size = 36, 
@@ -189,8 +206,6 @@ ledges.female <- data.frame(color = c("green", "blue", "red", "darkgreen", "purp
 lnodes.female <- data.frame(label = c("Person", "Institution"),
                     color = c("navy", "orange"),
                    ID = 1:2) 
-
-edges <- edges %>% rename(from = from, to = to)
 
 
 visNetwork(nodes = nodes.female, edges = edges, height = 650, width = 1100) %>%
@@ -216,8 +231,6 @@ lnodes.military <- data.frame(label = c("Person", "Institution"),
                     color = c("navy", "orange"),
                    ID = 1:2) 
 
-edges <- edges %>% rename(from = from, to = to)
-
 
 visNetwork(nodes = nodes.military, edges = edges, height = 650, width = 1100) %>%
   visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
@@ -242,9 +255,6 @@ lnodes.integrated <- data.frame(label = c("Person", "Institution"),
                     color = c("navy", "orange"),
                    ID = 1:2) 
 
-edges <- edges %>% rename(from = from, to = to)
-
-
 visNetwork(nodes = nodes.integrated, edges = edges, height = 650, width = 1100) %>%
   visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
   visNodes(size = 36, 
@@ -267,8 +277,6 @@ ledges.coed <- data.frame(color = c("green", "blue", "red", "darkgreen", "purple
 lnodes.coed <- data.frame(label = c("Person", "Institution"),
                     color = c("navy", "orange"),
                    ID = 1:2) 
-
-edges <- edges %>% rename(from = from, to = to)
 
 
 visNetwork(nodes = nodes.coed, edges = edges, height = 650, width = 1100) %>%
@@ -294,7 +302,6 @@ lnodes.landgrant <- data.frame(label = c("Person", "Institution"),
                     color = c("navy", "orange"),
                    ID = 1:2) 
 
-edges <- edges %>% rename(from = from, to = to)
 
 
 visNetwork(nodes = nodes.landgrant, edges = edges, height = 650, width = 1100) %>%
@@ -320,8 +327,6 @@ lnodes.upstate <- data.frame(label = c("Person", "Institution"),
                     color = c("navy", "orange"),
                    ID = 1:2) 
 
-edges <- edges %>% rename(from = from, to = to)
-
 
 visNetwork(nodes = nodes.upstate, edges = edges, height = 650, width = 1100) %>%
   visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
@@ -346,7 +351,6 @@ lnodes.midlands <- data.frame(label = c("Person", "Institution"),
                     color = c("navy", "orange"),
                    ID = 1:2) 
 
-edges <- edges %>% rename(from = from, to = to)
 
 
 visNetwork(nodes = nodes.midlands, edges = edges, height = 650, width = 1100) %>%
@@ -372,8 +376,6 @@ lnodes.lowcountry <- data.frame(label = c("Person", "Institution"),
                     color = c("navy", "orange"),
                    ID = 1:2) 
 
-edges <- edges %>% rename(from = from, to = to)
-
 
 visNetwork(nodes = nodes.lowcountry, edges = edges, height = 650, width = 1100) %>%
   visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
@@ -398,9 +400,6 @@ lnodes.antebellumfounding <- data.frame(label = c("Person", "Institution"),
                     color = c("navy", "orange"),
                    ID = 1:2) 
 
-edges <- edges %>% rename(from = from, to = to)
-
-
 visNetwork(nodes = nodes.antebellumfounding, edges = edges, height = 650, width = 1100) %>%
   visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
   visNodes(size = 36, 
@@ -424,9 +423,6 @@ lnodes.reconstructionfounding <- data.frame(label = c("Person", "Institution"),
                     color = c("navy", "orange"),
                    ID = 1:2) 
 
-edges <- edges %>% rename(from = from, to = to)
-
-
 visNetwork(nodes = nodes.reconstructionfounding, edges = edges, height = 650, width = 1100) %>%
   visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
   visNodes(size = 36, 
@@ -440,34 +436,69 @@ visNetwork(nodes = nodes.reconstructionfounding, edges = edges, height = 650, wi
 
 
 ```{r}
-#Make data frames for edge and node legends
-ledges <- data.frame(color = c("green", "blue", "red", "darkgreen", "purple", "turquoise"),
-                     label = c("Benefactor", "Board Member", "President", "Key Figure", "Founder", "Namesake"))
 
-lnodes <- data.frame(label = c("Person", "Institution"),
-                    color = c("navy", "orange"),
-                   ID = 1:2) 
 ```
 
 
 ```{r, echo=FALSE}
-#Create network visualization
-edges <- edges %>% rename(from = from, to = to)
-
-
-visNetwork(nodes = nodes, edges = edges, height = 650, width = 1100) %>%
-  visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
-  visNodes(size = 36, 
-           label = paste(nodes$id),
-           title = title,
-           font = list("size" = 20)) %>%
-  visEdges(color = list(color = edges$color, opacity = 0.2),
-           hoverWidth = 20,
-           selectionWidth = 36) 
 
 
 ```
  
+```{r}
+#Create plot showing number of religious institutions by denomination
+
+nodes.religiouschart <- nodes.religious %>%
+filter(Type == "Institution") %>%
+group_by(Denomination) %>%
+summarize(count = n())
+
+ggplot(nodes.religiouschart, aes(x = Denomination, y = count)) +
+geom_col()
+
+```
+
+```{r}
+#Create plot showing number of different types of political roles
+
+nodes.political <- nodes %>%
+filter(Type == "Person") %>%
+  filter(Political.Roles != "NA") %>%
+  group_by(Political.Roles) %>%
+  summarize(count = n())
+
+ggplot(nodes.political, aes(x = Political.Roles, y = count)) +
+geom_col()
+```
+
+```{r}
+#Create plot showing number of different types of political roles in private institutions
+
+nodes.political.private <- nodes %>%
+  filter(Type.1 == "Private") %>%
+filter(Type == "Person") %>%
+  filter(Political.Roles != "NA") %>%
+  group_by(Political.Roles) %>%
+  summarize(count = n())
+
+ggplot(nodes.political.private, aes(x = Political.Roles, y = count)) +
+geom_col()
+```
+
+```{r}
+#Create plot showing number of different types of political roles in public institutions
+
+nodes.political.public <- nodes %>%
+  filter(Type.1 == "Public") %>%
+filter(Type == "Person") %>%
+  filter(Political.Roles != "NA") %>%
+  group_by(Political.Roles) %>%
+  summarize(count = n())
+
+ggplot(nodes.political.public, aes(x = Political.Roles, y = count)) +
+geom_col()
+```
+
 
  
 ```{r setup, include=FALSE}
