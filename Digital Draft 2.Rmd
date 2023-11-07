@@ -1,0 +1,299 @@
+---
+title: "Digital Project Second Draft"
+author: "Sally Mauldin"
+date: "2023-11-07"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+**I. Historical Background**
+
+**Higher Education in the 19th Century**
+
+  Higher education in the United States at the turn of the nineteenth century existed with “virtually no government accountability or regulation.”[^fn1] Early on, politics began to find its way into the cracks of the new education system through the granting of college charters “as an aspect of political patronage” which was “an easy, inexpensive way for legislators and governors to reward supporters” with “no promise, explicit or implicit, of financial support from the state government.”[^fn2] The nineteenth century saw an increase in colleges and universities across the country, created by politicians without long term plans for how to sustain them. The antebellum period of the nineteenth century saw a marked increase in college enrollment as well with some data suggesting enrollment doubled between 1800 and 1860.[^fn3] This is underscored by the fact that there were only nine higher education institutions in the United States prior to the American Revolution, and there were about 250 institutions entering the Civil War, although not all were successful with an estimated 700 colleges trying and failing in the antebellum period.[^fn4] This time of growth was particularly dynamic after 1885.[^fn5] Higher education was also characterized by a “lowering of the standard” after the Civil War.[^fn6] As the “officers” of colleges in the early years of the nineteenth century (president, faculty, trustees, etc.) were often “of one and the same mind,” it suggests a certain amount of political and intellectual hegemony that defined the higher education landscape of the time.[^fn7] Universities in this period were run by board of trustees “dominated by well-to-do businessmen and by presidents who were essentially businessmen in academic dress.”[^fn8] 
+  
+  From the outset, higher education in the United States was supposed to serve three purposes:
+  
+First, the university would make each of its graduates into a force for civic virtue. Second, it would train a group of
+political leaders who would take a knightly plunge into “real life” and clean it up. Finally, through scientifically
+oriented scholarship, radical substitutes could be found for political procedures subject to personal influence.[^fn9] 
+
+The role that politics played in thinking through curriculum choices and what college was meant to do for its students is apparent. Civic duty repercussions are a primary lens through which to understand how and why colleges and universities developed the way they did. If the purpose of a college education was to prepare young people for leadership roles in state and local government, then it is exceptionally important to have a thorough understanding of who the educators were and what biases and influences they were subject to. The political ideologies of the university’s leadership would then be imprinted on their pupils, who viewed college as “good times, pleasant friendships, and, underneath it all, the expectation of life-long prestige resulting from the degree.”[^fn10] This mindset was amplified by an expectation in the nineteenth century college of “undivided loyalty” to the institution, which became even more explicit when coupled with the “homogenous student populations” found at most schools.[^fn11]  
+
+  There was also a dramatic increase in religiously affiliated colleges, and most denominations were represented in this boom. The denominational schisms that were found in churches translated into colleges with the founders of these institutions operating in an “environment of national ambition, democratic aspiration, geographic isolation, and romantic imagination” with each denomination turning “their own rivalries into sets of competing colleges.”[^fn12] This movement was the result of the Second Great Awakening in the early part of the 19th century. Churches hoped that “Christianity would prevail in the lives of men,” and the “toleration that had characterized the colleges in the late colonial period and during the early years of the republic” were replaced by “denominational ambition.”[^fn13] Nationally, it marked a new trend for colleges and universities that was led by the Congregationalists in New England and the Presbyterians in the mid and southern states, with Baptists and Methodists bringing up the rear of this movement. Baptists and Methodists viewed colleges slightly differently, seeing them as “part of that apparently endless American process of coming to terms with an essentially middle-class society” as they were forced to admit that “no church could establish itself as a permanent refuge for the permanently meek and disinherited.”[^fn14]  
+	
+  The 19th century also saw the creation of colleges intended to educate females. The democratic nature of the new country meant that men could be a part of the government in avenues that were previously closed under the colonial leadership. In this sense, the “American woman possessed a responsibility which belonged to no other women in the world” as “her sons were free to partake actively in the affairs of government, and it was her obligation therefore to help prepare the manhood of tomorrow for responsible citizenship.”[^fn15] If females were to play this role at home and in motherhood, they needed to be educated themselves to a certain extent. Even so, the role of these female colleges usually included domestic studies as well as course material that would educate women on “how to help their husbands to make their fortunes.”[^fn16] Women could only be educated “up to a point,” as colleges for females were not “a very appropriate place” especially in the antebellum South when “all God had intended them for [was] marriage and motherhood.”[^fn17] Still, women persisted and a “handful of pioneers” moved forward, and attendance “swelled” after the Civil War, becoming a “torrent” in the 20th century.[^fn18] It is estimated that there were at least 45 female colleges by 1860, and this growth was “one of the most distinguishing features of American higher education after 1850.”[^fn19] 
+	
+  Following the Civil War, federal legislation and programs led to increased growth of the higher education system in the United States. Between the Morrill Act and the Hatch Act, along with a “success of major pieces of legislation that expanded and consolidated federal interest in such fields as agriculture, military training, and engineering,” the federal government invested more heavily in colleges and universities than ever before, particularly between 1887 and 1914.[^fn20] Half of the 22 South Carolina institutions included in this study were founded after the Civil War’s conclusion in 1865, and five of those 11 colleges and universities are historically Black. This increase in federal funding “made possible the extension of the land-grant program to…black colleges in the Southern states” which “illustrated both the gains and the limits of higher education in the Progressive era.”[^fn21] Nothing contributed more to the transformation of higher education in the Reconstruction and post-Reconstruction era than the land-grant movement which “came closer to representing fundamental developments in American social and intellectual life,” which created “institutions intended, in part, to sustain an agrarian past.”[^fn22] This movement to focus on agricultural aims was supported by a widespread “belief that life was sounder, more moral, more character-building where the college was nestled among the hills or planted on the prairie.”[^fn23] 
+  
+  The nineteenth century saw the higher education system in the United States change dramatically. The number of institutions increased throughout the course of the century, and the aftermath of the Civil War brought forth a new category of institutions, historically Black colleges and universities, that was made possible by federal legislation. Over the course of the century, colleges and universities, particularly in the South, grappled with what a new version of the institution would look like following the Civil War, as colleges and universities “now lay prostrate, victims of war, poverty, or politics” with a “dependence on legislative support expos[ing] them to all the vicissitudes of politics,” and in some cases, the institution ceased to exist for the inability to reimagine itself and evolve from the antebellum days.[^fn24] The nineteenth century solidified the university as “largely an agency for social control,” of which “the custodianship of popular values comprised the primary responsibility of the American university.”[^fn25]  
+
+**Higher Education and Slavery**
+
+  This digital project builds upon Alfred L. Brophy’s work, University, Court, and Slave, in which Brophy provides a survey of the political viewpoints of southern universities in the antebellum period, places where “well-educated faculty taught the students drawn disproportionately from the planter class that slavery was right, indeed, a necessity.”[^fn26] Further, these universities “justified themselves as places where students learned to defend southern values.”[^fn27] In this sense, the system of slavery was seen as a primary tenet of southern life, being supported not just by legislators and courts but also by educators. In a cruel twist of irony, colleges were supported by slavery in that the labor of the enslaved “afforded them [Southerners] leisure and money to obtain an education.”[^fn28] The entire higher educational system of the South was dependent upon the existence of slavery. For the purposes of this project, it is especially important to understand “how the pro-slavery ideas, taught in southern universities to the next generation of leaders, illuminate the intellectual world of southern politicians and judges.”[^fn29] To study colleges and universities is to study the ideologies of politicians. The two are inextricably linked.
+
+  While Brophy focuses on the likes of the University of Virginia, the College of William and Mary, and Randolph Macon College, he does not take an in-depth look at smaller schools or at HBCUs. Additionally, his survey ends at the Civil War, so there’s a hole in the scholarship in terms of comparison to what happened in Reconstruction and post-Reconstruction. Brophy notes that scholars can make a “compelling case that South Carolina College (now the University of South Carolina) was the single most important school for pro-slavery politicians and thinkers.”[^fn30] Scholars have recognized the importance of South Carolina’s higher education curriculum in how pro-slavery thought developed, so an in-depth exploration of the entire system will help people understand why these institutions were so influential. As there is “little disagreement among historians” about the “potency” of South Carolina College in “influenc[ing] several generations of political leaders,” it serves as an ideal place to begin to understand how politicians influenced colleges and vice versa.[^fn31] South Carolina College also served an interesting role in the power dynamics of South Carolina, as a “leading purpose” in its existence was to “create an institution that would help to unite a state seriously torn by up-country and down-country rivalries, by the legacy of bitterness inherited from internal conflicts of the Revolutionary era.”[^fn32] Despite its intended purpose to heal a fragmented state, South Carolina College was made in the image of the Lowcountry aristocracy.
+
+  Craig Steven Wilder credited higher education institutions for allowing the entire system of slavery to thrive in the United States, calling out colleges for not being “innocent or passive beneficiaries of conquest and colonial slavery,” noting that colleges “braided their histories and rendered their fates dependent and antagonistic” by standing “beside the church and state as the third pillar of a civilization built on bondage.”[^fn33] Colleges not only benefited from the institution of slavery but also helped to ensure that it would continue to be the status quo throughout the South. The best way to understand the influence of institutions is to strive to understand the people that built them. This study does exactly that in what was arguably the state most committed to slavery as a way of life.
+
+**South Carolina History**
+
+  As a colony, South Carolina was comprised of a “heterogenous population” with unfree people outnumbering a “small” white society.[^fn34] Unsurprisingly, historian Walter Edgar argues that money “was at the root of slavery in South Carolina” and “greed was a more powerful stimulant than fear.”[^fn35] In order to combat the Black majority, the colony attempted to attract more white settlers to South Carolina. The result was an influx of immigrants that “settled in the backcountry” which created a “sectionally divided society” with the older and more politically influential families residing in the Lowcountry and newcomers settling in the Upstate.[^fn36] It is important to note that the “backcountry” was “mainly the home of small farmers.”[^fn37] Historian Robert Weir paints a picture of how small farmers and large planters existed in different parts of the colony:
+
+"While the backcountry contained small farmers and a few large planters, the lowcountry was reputed to be made up entirely of big planters and their overseers. That, of course, was not quite true, but because most of the work force was enslaved, there were relatively few white laborers; and because slaves were also a form of capital that earned more for those who had more, the spread between rich and poor was greater. By almost any measure short of counting slaves as potential holders of wealth rather than a form of wealth, lowcountry South Carolina was the richest society in colonial America."[^fn38] 
+
+This sets the scene for the state of South Carolina during the beginnings of higher education. It underscores the importance of upholding the institution of slavery for planters to maintain their wealth. One of the mechanisms employed by South Carolinian enslavers was to perpetuate their way of life through educating the next generation to believe in the same ways of life through colleges and universities.
+
+  None of the 22 colleges and universities included in this study were established prior to the American Revolution.[^fn39] There were few educational opportunities in South Carolina prior to revolution. Most individuals who received education beyond basic grammar school subjects traveled to England to be educated there. Wealthier South Carolinians who could afford the travel to England were numerous; in fact, Carolinians claimed the “largest contingent of American students in England during the late colonial period,” but South Carolinians were not pleased that the studies in England were necessary at all due to a lack of options in the colony.[^fn40] These voices grew louder calling for local options as the colonies marched closer to revolution, and these colonists began looking at schools in northern colonies in lieu of study abroad. In 1755, the Charleston Library Society was created with a local college as one of its founding goals; sadly, it was not successful, but it did sow seeds for the wisdom of the idea amongst colonists.[^fn41] 
+
+  Ultimately, the “friction with the mother country” was “the crucial factor” in “directing the attention of prominent men to the need for a college” but “also in subverting their attempts to establish one,” thus explaining why the College of Charleston was not chartered until after the fledgling country had achieved its independence.[^fn42] The idea of a college of its own enjoyed considerable support in colonial South Carolina, but it was not unanimous due to financial concerns and the belief that if one was wealthy enough to consider college, then that person was likely wealthy enough to fund travel to England to achieve it. This was tied to socioeconomic stations as well; in other words, “better a good cobbler than a poor scholar; not every shopkeeper’s son should aspire to be a gentleman.”[^fn43] This ideology reinforces the idea that higher education in South Carolina was born to serve a certain class of people, and it stands to reason that the curriculum at those schools would further the political, economic, and social agendas of that class. Many in those classes in “established leadership” chose to become even “more socially exclusive and politically conservative” after the revolution, with the “challenge to men of property” proving to “be relatively weak and ephemeral.”[^fn44] In other words, many of the same families who controlled politics in colonial South Carolina continued to do so in statehood as well. Indeed, South Carolina politics distinguished itself in the antebellum period by the “extraordinary power of the legislature and the absence of parties” which “removed potential brakes on extreme action.”[^fn45]  
+
+  It is impossible to discuss 19th century South Carolina without mentioning John Caldwell Calhoun, born in 1782 in South Carolina, amidst the excitement and uncertainty of a new nation. While Calhoun’s name does not appear in this dataset as having any affiliation with the colleges and universities on the list, he did influence the higher education system in South Carolina. After studying at Yale, Calhoun traveled to Charleston and studied law with Henry W. DeSaussure, one of Charleston’s “most prominent lawyers,” a legislator, and founding board member at the University of South Carolina.[^fn46] Calhoun’s political career began in the South Carolina General Assembly in 1808, and he was elected to Congress in 1810. He rose to political prominence in Washington, and he served as vice president from 1825 to 1832. Calhoun is perhaps most remembered for the Fort Hill Address, published in 1831, that dealt with the notion of nullification in which Calhoun “asserted that the Constitution was a “compact” between what were in essence independent nations,” and
+
+"This was the core of Calhoun’s constitutional theory, a presupposition from which, if accepted, all else flowed with an   irresistible logic: the states were sovereign entities that preceded the Union, had delegated specific powers to the    federal government to be exercised for their common good and protection while retaining all other powers for themselves,  and had the final authority to interpret the terms of that contract."[^fn47] 
+
+Calhoun’s logic set up the argument that his successors would use after his death that ultimately led to the secession of South Carolina and other states from the Union. The address was distributed widely throughout the country.
+
+  As Calhoun’s political ideologies became the basis of political curriculum at South Carolina College, his views on slavery must be addressed:
+
+"Calhoun had begun openly defending slavery by early 1836 during the debates over the mail crisis and abolitionist petitions, throwing aside much of his previous caution. And yet for the most part his defenses of slavery in those early speeches employed fairly traditional rhetoric…Slavery could not be destroyed without destroying southern society, and the South would resist that destruction…"[^fn48] 
+
+Calhoun’s stance on slavery was clear. He did not just defend the institution; he argued that “slavery was a positive good,” and he “recast the master-slave relationship for the modern world” describing it “in terms that political economists were using to describe the emerging system of industrial capitalism and its conflicts.”[^fn49] Calhoun was doing something more than representing his constituents who wished to maintain the status quo. His defense turned into “an aggressive political ideology designed to counter the abolitionist campaign,” casting slavery as “not a moral abomination” but rather “an institution uniquely suited – morally, economically, politically – to the conditions of the modern world.”[^fn50] His argument was shocking for those listening who were accustomed to previous generations of Founding Fathers who did not believe the system of slavery was right even as they profited from it. Calhoun had taken the defense of slavery to a new level, and there was no going back after he opened Pandora’s box. His ideologies on secession and slavery would be read by and taught to numerous southerners, becoming a legislatively mandated part of education at South Carolina College as his “work on government was made a text-book by act of Legislature.”[^fn51] His ideologies were considered dangerous, even by his colleagues, with one calling his death in 1850 “the interposition of God to save the country.”[^fn52] 
+
+  In Calhoun’s time and following his death, grammar school and secondary education was “inadequate at best and nonexistent at worst” in 1860 South Carolina, higher education was “much stronger,” particularly South Carolina College (now known at the University of South Carolina).[^fn53] Edgar describes the higher education landscape:
+
+"For most of the nineteenth century the South Carolina College had a virtual monopoly on higher education in the state. The College of Charleston (chartered 1785), which had never been much more than an elementary school, closed in 1836; it reopened in 1838 as a municipal college, supported by the taxpayers of Charleston."[^fn54]  
+
+This underscores the importance of a thorough understanding of the founding of South Carolina College to better understand how it came to be the standard of higher education. Its location did more than attempt to bring two parts of the state together; its “proximity to the legislature and governor provided a superb laboratory for college students who aspired to be future state politicians.”[^fn55] Even following the Civil War, South Carolinians looked to the University of South Carolina as a barometer of federal Reconstruction efforts, as white citizens were horrified at the fact that the student body was 90 percent Black in 1875, considering it “one of the most heinous acts of Reconstruction.”[^fn56] 
+
+  Despite its stronghold on higher education, religious individuals criticized South Carolina College for what they deemed to be inappropriate and secular curriculum. In 1839, Erskine College, a Presbyterian-affiliated institution, was founded in response to the alleged shortcomings of South Carolina College, although “friends of the South Carolina College in the General Assembly blocked the efforts of the new college to obtain a charter.”[^fn57] Erskine’s founders paid the lack of charter no mind and continued with their plans, creating the first four-year religious college in the state. The notion that South Carolina College wasn’t sufficiently pious continued to ripple across the state, spawning Furman College (Baptist), Wofford College (Methodist), Newberry College (Lutheran), and Columbia Female College (Methodist) in later years.
+  
+	Following Reconstruction, South Carolina politics was dominated for a time by the Bourbons or Redeemers, signaling a return to the old-world order of antebellum days. It began with the election of 1876 in which Wade Hampton and others like him controlled the state yet again. The majority of white leadership at the time (85 percent) were alumni of colleges located in South Carolina with most of them holding degrees from South Carolina College.[^fn58] These political leaders believed that once the “old order” had been restored, their “mission [was] complete once they had made South Carolina safe for white man’s democracy,” making the critical mistake of assuming that it was “their due” to hold office with “no leadership, no ideas, no vision.”[^fn59] This would prove to be a costly miscalculation as a fiery young farmer gained traction and a following throughout the 1880s, calling for change from traditional political leadership and wielding a vision for forward progress that showcased white farmers as the centerpiece of his platform. Ben Tillman would usurp the entire establishment by the early 1890s.
+	
+	A native of Edgefield, South Carolina, Tillman began the journey that would catapult him onto the national political stage rather humbly as a founder of the Edgefield Agricultural Society in 1885 with the goal of promoting agricultural reform as a possible solution to the economic despair South Carolina found itself in after the Civil War. The cause was personal for Tillman; a “series of droughts and crop failures bedeviled the state” in the early 1880s and he saw a “need for diversification of agricultural education” for others to avoid ruin.[^fn60] Almost immediately, Tillman gained a following among white farmers. Edgar describes Tillman’s gravitas, “A century before spin doctors and politicians used sound bites to grab headlines Tillman was a master of the technique.”[^fn61] 
+	
+	Tillman’s march to political notoriety included attacks on “inept politicians who were more devoted to the memory of the Confederacy than they were to the men who labored in the fields, voted, and paid taxes.”[^fn62] He set his supporters up as hard-working men while anyone who spoke against him was branded a politician. The political elite largely managed to defeat Tillman’s proposals until Thomas Green Clemson, son-in-law of John C. Calhoun, died in 1888 and left his estate (some 800 acres and roughly $80,000) to the state of South Carolina for the establishment of an agricultural college. Politicians in Columbia were stirred to action as soon as the terms of the Clemson bequest became public, viewing such a school as “a threat to their beloved University of South Carolina.”[^fn63] 
+	
+	Among others, Tillman was instrumental in convincing the state to accept Clemson’s gift, and the Clemson Agricultural College of South Carolina became a reality in 1889. This was a victory Tillman had dreamed of, and he served as one of the original board members for the new school. The creation of Clemson College was exactly the type of public statement that the Farmer’s Movement needed to gain momentum; Tillman was elected governor handily in 1890, winning 32 of 34 counties.[^fn64] Tillman’s support of agricultural education “helped stimulate a move throughout the South to revitalize historic state universities.”[^fn65] 
+	
+  Having won a victory in the form of Clemson College’s existence and holding the governorship, Tillman was not satisfied. He delighted in meddling with the University of South Carolina, reimagining it as a liberal arts school and stripping away any vestiges of its agricultural education aspirations. Tillman also set up a new board of trustees that included himself as the governor, and it’s no secret he “cherish[ed] resentment against the institution whose benefits he had not received, which nurtured his enemies, whose students mocked him, and whose pretensions stood in the way of development of his cherished ideas of agricultural education.”[^fn66] He was instrumental in moving Winthrop University from its founding location in Columbia in the Midlands to Rock Hill, a location bordering the Upstate, with the aim of “promot[ing] industrial education for the young white women of the state.”[^fn67] After serving four years as governor, Tillman was elected to the United States Senate, a position he held from 1895 until his death in 1918.
+
+**II. Methodological Frameworks**
+
+**Critical University Studies**
+
+  Higher education institutions have complex pasts, rooted in colonialism, slavery, capitalism, and discrimination. Their dark pasts need to be discovered, uncovered, and made public so that society can begin to grapple with the moral discrepancies woven throughout the fabric of these places of supposed enlightenment. The problem with popular perception of higher education institutions as bastions of free thought and free movement lies in the “selectively nostalgic narratives of US higher education history that invisiblize (make absent) colleges’ and universities’ structural complicity in racial, colonial, and ecological violence.”[^fn68] It is a difficult argument to make as popular perception is that the “United States became a world leader in educational attainment in the nineteenth century” as the “implicit public good practice spread from high school through college.”[^fn69] The only way to combat the idyllic visions of hallowed ivy halls is to research and disseminate as many historical truths as possible about the founding of these institutions.
+  
+  Critical university studies (CUS) is not necessarily a newcomer to the discipline of history, but its roots are not as deep as other fields of interest. While the 1960s saw criticism of higher education from an anti-war and feminist perspective, that criticism grew louder in the 1980s when universities were allowed to patent (and thus monetize) inventions. Publications centering around CUS were first published in the late 1990s and early 2000s. While some of the publications have dealt with the problems inherent in the foundations of the higher education institutions (i.e. unfree people were forced to work at the institutions), many of them focus instead on corporatization and student debt issues. CUS’s main contributions to date have been in encouraging faculty, staff, and students to think critically about their surroundings and engage in grassroots efforts to effect change in either how topics are thought about and taught or in policies governing issues like graduate tuition and intellectual property.
+
+	The problem is that none of the scholarship has made broader connections between the powerful political figures who ruled the government and their influences in founding and establishing higher education, particularly during the long 19th century. It is not enough to uncover colonialism’s ideologies embedded in the foundations of a scholar’s home institution; rather, there are clusters of political influence that can be uncovered by investigating an entire state’s institutions. The political beliefs of these figures made their way into the very fabric of higher education, becoming part of the curriculum which ensured that those views were passed onto the next generation of leaders. An ugly cycle was born and perpetuated in the name of enlightenment for over two centuries.
+	
+	Critical university studies (CUS) is a particularly helpful theoretical framework through which to view this problem as it “encourages university inhabitants to look askance at these structures, and to query why they endure, how they came to take their current form, and whom they serve.”[^fn70] The term was first defined by Jeffrey J. Williams in a 2012 issue of The Chronicle of Higher Education in response to the belief that university criticism is often a “scattershot enterprise” comprised of “an occasional piece that’s a sideline from normal work.”[^fn71] Williams further explained that the “sizable body of scholarship coming from the field of education” primarily addressed K-12 schools, although the CUS work described by Williams is focused on labor concerns particularly with respect to graduate students.[^fn72] CUS scholarship first emerged in the 1990s with works like Bill Reading’s The University in Ruins and Sherry Slaughter and Larry L. Leslie’s Academic Capitalism: Politics, Policies, and the Entrepreneurial University which were concerned with the impact of the university’s ability to patent inventions. 
+	
+	CUS goes a step beyond postmodernism as it seeks to understand the university as “both a discursive and a material phenomenon” by “turn[ing] a cold eye on higher education, typically considered a neutral institution for the public good, and foregrounds its politics, particularly how it is a site of struggle between private commercial interests and more public ones.”[^fn73] Those private commercial interests are not a new consideration brought on by the ability of universities to monetize inventions via patents. Rather, private commercial interests have existed since the founding of higher education in the United States. Upton Sinclair sounded the alarm early in his 1923 work, The Goose-step: A Study of American Education, writing that the “educational machine has been stolen…a bandit crew have got hold of it and have set it to work, not for your benefit, nor for the benefit of your sons and daughters,” and asserting that “young people are being taught, deliberately and of set purpose, not wisdom but folly, not justice but greed, not freedom but slavery, not love but hate.”[^fn74]  
+	
+	Previous CUS scholarship has not adequately addressed the circumstances that created the modern problems found at colleges and universities. While some works have detailed examples of problematic colonial origins in higher education, no comprehensive study exists that ties together the institutions of an entire state.[^fn75] Although generalities drawn from the history of a few select colleges can serve as a starting point, more research is needed beyond the larger, well-known institutions to paint a complete picture of the landscape of higher education at the point of its creation. Surveys are helpful for introducing the idea of CUS as a framework for historical understanding, but it is not inclusive and wide-ranging enough to draw broad conclusions.
+
+**Digital Methods**
+
+  Shawn Graham, Ian Milligan, and Scott Weingart note that network science is relatively new territory for historians (at least as of 2016), so there is limited work that has been done in this field.[^fn76] As this project includes institutions that were founded in different years, the temporal aspect of networks is an important consideration. This is an emerging field with “no consensus on how temporal networks should be represented.”[^fn77] One of the project’s challenges is visualizing networks over time and space by clearly showing change in the model. The best way to overcome the visualization challenge is to utilize “mixed-method approaches that integrate the strengths of humans and computers” to answer qualitative research questions.[^fn78] The answer of how to best do this lies somewhere between David J. Bodenhamer’s concepts on deep mapping and Manuel Lima’s thoughts on trees of knowledge that “can pragmatically express multiplicity (represented by its boughs, branches, twigs, and leaves) from unity (its central foundational trunk).”[^fn79] The goal is to create a tree of knowledge showing the roots of higher education throughout time and space. As Lima explains, “We act and live in networks, so it makes sense that we start thinking in networks.”[^fn80]
+  
+  The idea of networks and how to best visualize them is central to this study as there are hundreds of people affiliated with the founding of 22 institutions. There is a precedent in the digital humanities for linking narratives to networks and vice versa as discussed in Viral Networks: Connecting Digital Humanities and Medical History.[^fn81] Network models have served to improve “our understanding of a variety of historical phenomena.”[^fn82] Network models demonstrate how people, places, and ideas were connected using visualizations to make previously unknown connections clearly visible. In fusing narrative and networks, the “mixed-method” approach can serve to “integrate the strengths of humans and computers” to answer “qualitative research questions.”[^fn83] Context in interpreting the network visualizations is key to understanding new knowledge that comes from the models. While Ewing and Randall’s work is primarily about medically related networks, the methodology works the same for tracing how ideas passed between higher education institutions and the individuals associated with them as long as the “connections among elements are more important than the mere presence or absence of the elements in isolation.”[^fn84]
+  
+	Charting the origins of higher education institutions in South Carolina is a significant undertaking as it leads to new understandings about the political nature of the past to help form a different future. Imagining the solution as a digital humanities project allows for the creation of “common organizational models [that] would better oppose institutional and disciplinary inequities,” with a concrete goal of creating helpful dataset models and visualizations for scholarly and public consumption.[^fn85] The first two centuries of United States higher education history are steeped in trauma, particularly with respect to the treatment of unfree people in those founding years. Digitization of those histories in one place allows previously unknown pockets of power to be uncovered to understand how and why these institutions operate.
+	
+  Scholarship must include all types of institutions, ranging from all-male, all-white colleges to co-educational colleges to historically Black colleges and universities. The comparison between all different types of institutions will highlight the similarities and differences in how each type developed and who was responsible for founding ideologies ingrained in the institution’s mission and structure. The data must be co-located in the same dataset to see connections that may be missed when information for institutions is siloed. Digital interventions break through those siloes to visualize the data in a way where connections between people and institutions are clearly demonstrated. By focusing on a state, the end result will be a small world network, which allows for many interesting conclusions including “the time it might have taken for materials to circulate within and across communities and the relative importance of individual actors in shaping the past.”[^fn86] These network visualizations have the ability to connect small communities to global ones which makes “network analysis a promising methodology for connecting the historiographic traditions of microhistories and the Braudelian longue durée.”[^fn87] As the network visualizations allow for connections to be seen between institutions and the state, the possibility then exists to connect those circumstances to larger political movements in the entire United States.
+
+**III. Network Visualizations and Analysis**
+
+  Network analysis is particularly well-suited to this project as a digital intervention due to the expansive number of nodes (over 300) and the many complex relationships between individuals and institutions that need to be charted. The most complicated network visualization includes all institutions (22) and all people (295). Institutions are represented as orange nodes and people are shown as navy nodes. The shape of the person nodes corresponds to different political roles that the person held (i.e. Governor, Legislator, Founding Father, etc.).Any node shape other than a circle represents at least one political office. The colors of the edge lines represent the relationship between the person and the institution (i.e. Board member, President, Founder, etc.). The complexity of higher education and politics in 19th century South Carolina is seen in one visualization.
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+#Load libraries
+library(visNetwork)
+library(igraph) 
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+```
+
+````{r, message=FALSE, warning=FALSE, echo=FALSE}
+#Create edges and nodes from CSV files
+edges <- read.csv("edges.version5.csv", stringsAsFactors = FALSE) 
+edges <- as.data.frame(edges)
+
+nodes <- read.csv("nodes.version6.csv", stringsAsFactors = FALSE) 
+nodes <- as.data.frame(nodes)
+```
+ 
+````{r, message=FALSE, warning=FALSE, echo=FALSE}
+#Create a column assigning colors to institutional relationships like President and Board Member
+edges <- edges %>%
+  mutate(title = edges$Institution.Roles[1:302]) %>%
+  mutate(color = ifelse(edges$Institution.Roles == "Benefactor", "green",
+                        ifelse(edges$Institution.Roles == "Board Member", "blue",
+                               ifelse(edges$Institution.Roles == "President", "red",
+                                      ifelse(edges$Institution.Roles == "Key Figure", "darkgreen",
+                                                                                       ifelse(edges$Institution.Roles == "Founder", "purple",
+                                                                                              ifelse(edges$Institution.Roles == "Namesake", "turquoise", "gray")))))))
+```
+
+````{r, message=FALSE, warning=FALSE, echo=FALSE}
+#Customize the nodes by color in network. Nodes are all of the people and each of the 22 institutions. Total of 317 nodes.
+nodes <- nodes %>%
+  mutate(shape = ifelse(nodes$Political.Roles == "Legislator", "square",
+                        ifelse(nodes$Political.Roles == "Founding Father,Legislator", "diamond",
+                               ifelse(nodes$Political.Roles == "Legislator,Governor", "triangle",
+                                      ifelse(nodes$Political.Roles == "Foreign Ambassador,Founding Father,Legislator", "diamond",
+                                             ifelse(nodes$Political.Roles == "Lt. Governor,Legislator", "square",
+                                                    ifelse(nodes$Political.Roles == "Founding Father,Governor,Legislator", "diamond",
+                                                           ifelse(nodes$Political.Roles == "Governor,Legislator", "triangle",
+                                                                  ifelse(nodes$Political.Roles == "Governor's Staff,Legislator", "square",
+                                                                         ifelse(nodes$Political.Roles == "Governor", "star",
+                                                                                ifelse(nodes$Political.Roles == "Founding Father,Judge,Governor,Legislator", "diamond",
+                                                                                       ifelse(nodes$Political.Roles == "Foreign Ambassador,Legislator", "square",
+                                                                                              ifelse(nodes$Political.Roles == "Legislator,Governor's Staff", "square",
+                                                                                                     ifelse(nodes$Political.Roles == "Judge,Legislator", "square",
+                                                                                                            ifelse(nodes$Political.Roles == "Foreign Ambassador", "open oval", "circle"
+                                                                              )))))))))))))))%>%
+  mutate(title = (nodes$id[1:317])) %>%
+  mutate(color = ifelse(nodes$Type == "Person", "navy",
+                        ifelse(nodes$Type == "Institution", "orange", "tan")))
+
+```
+
+```{r}
+#Make data frames for edge and node legends
+ledges <- data.frame(color = c("green", "blue", "red", "darkgreen", "purple", "turquoise"),
+                     label = c("Benefactor", "Board Member", "President", "Key Figure", "Founder", "Namesake"))
+
+lnodes <- data.frame(label = c("Person", "Institution"),
+                    color = c("navy", "orange"),
+                   ID = 1:2) 
+```
+ 
+```{r, echo=FALSE}
+#Create network visualization including all institutions and all people
+edges <- edges %>% rename(from = ID, to = ID.1)
+
+
+visNetwork(nodes = nodes, edges = edges, height = 650, width = 1100) %>%
+  visIgraphLayout(layout = "layout_with_fr", randomSeed = 12) %>% 
+  visNodes(size = 36, 
+           label = paste(nodes$id),
+           title = title,
+           font = list("size" = 20)) %>%
+  visEdges(color = list(color = edges$color, opacity = 0.2),
+           hoverWidth = 20,
+           selectionWidth = 36) 
+```
+ 
+  Differences in numbers of connected individuals is clearly observed in this visualization. Smaller, lesser-known schools tended to have smaller spheres of influence and were not connected to the larger institutions through individuals. Examples of this include Benedict College, Erskine College, Lander University, Converse University, Columbia College, North Greenville University, Presbyterian College, Claflin University, Furman University, and Allen University. These schools were siloed from other institutions with no commonalities in their founding partners. It is interesting that all of these schools are private and religiously affiliated.
+  
+  The size of the network for each school is varied despite all of them being religiously affiliated. Presbyterian College and Columbia College in particular had many participants involved in their founding, while Lander University and Erskine College have few individuals listed as part of the school’s origins. Interestingly, denomination does not seem to impact the size of boards and number of people involved as Presbyterian College and Erskine College are both affiliated with the Presbyterian denomination while Columbia College and Lander University are both affiliated with the Methodist denomination. It appears there was not a single pattern for how religiously affiliated institutions were created in South Carolina during this period.
+  
+  The one exception involves the Lutheran denomination. There are two Lutheran institutions included in the dataset, and they shared a common board member in John Bachman. He served as an original board member at both the Lutheran Theological Southern Seminary, established in 1830, and Newberry College, established in 1856. In fact, Bachman was considered so important to the founding of Newberry College that his birth was celebrated on the campus as part of Founders’ Day celebrations, with a 1909 speaker stating that “the college was founded first by the Lord, then through the church, and particularly through those heroes of faith and sacrifice chief among whom was Dr. John Bachman.”[^fn88] Bachman is the common thread between the only two Lutheran schools in the dataset which suggests he was one of the most important voices for the Lutheran church, having served as a pastor for over 59 years at the time of his death in 1874.[^fn89]
+  
+  One institution is woefully underrepresented with only one node. Unfortunately, records have not been located to fill in the entire network associated with the founding of Limestone University. Very little information is publicly available about the institution’s history. Repeated contact with the archivist at the school’s library did not yield any answers, so research about this particular school is ongoing. As the institution got its start as Limestone Sprig Female High School, it is unknown if the school even had a board for its earliest years. The lack of easily located records may be due to the fact that the school, while founded in 1845, struggled during the Civil War and was subsequently reimagined in 1881, ultimately being renamed as Limestone College in 1898.
+  
+  It is immediately obvious that there are two major clusters of connected institutions. The first is comprised of Lowcountry and Midlands institutions and includes the College of Charleston, the University of South Carolina, and the Medical University of South Carolina (MUSC).[^fn90] It is also immediately obvious that many individuals in these three networks served in various political roles. This is not surprising given the traditional stronghold that the Lowcountry (which includes the College of Charleston and MUSC) had on South Carolina politics. Political power was so deeply entrenched in the origins of College of Charleston that three Declaration of Independence signers were part of the founding board of trustees. The schools in this arc of power are older than the schools found in the other cluster. MUSC is connected to College of Charleston by David Ramsay, who served as a board member at the founding of each school. College of Charleston is connected to the University of South Carolina by Charles C. Pinckney, who served as a board member at the founding of each school.
+  
+  The other cluster is comprised of Clemson University, Winthrop University, South Carolina State University, and Voorhees University. All four schools are products of the later 19th century. Clemson and South Carolina State serve as land-grant institutions, while South Carolina State and Voorhees are both historically Black universities. One individual connects Winthrop, Clemson, and South Carolina State – Ben Tillman. State Senator Stanwix Mayfield connects South Carolina State and Voorhees, having served as a board member at both institutions. It is unknown what communication if any occurred between Tillman and Mayfield, although it is a future research question to be explored.
+
+
+
+
+**Footnotes**
+[^fn1]: Thelin, 41.
+[^fn2]: Thelin, 43.
+[^fn3]: Thelin, 69.
+[^fn4]: Frederick Rudolph and John R. Thelin. The American College and University: A History (Athens, GA: University of Georgia Press, 1991), 47.
+[^fn5]: Laurence R. Veysey. The Emergence of the American University (Chicago: University of Chicago Press, 1965), 264.
+[^fn6]: Colyer Meriwether and Edward McCrady. History of Higher Education in South Carolina: With a Sketch of the Free School System (Washington: Government Printing Office, 1889), 53.
+[^fn7]: Veysey, 57.
+[^fn8]: Thorstein Veblen. The Higher Learning in America (Baltimore, Maryland: Johns Hopkins University Press, 2015), 1.
+[^fn9]: Veysey, 72.
+[^fn10]: Veysey, 269.
+[^fn11]: Veysey, 284-285. 
+[^fn12]: Rudolph, 54.
+[^fn13]: Rudolph, 54.
+[^fn14]: Rudolph, 57.
+[^fn15]: Rudolph, 309.
+[^fn16]: Rudolph, 309.
+[^fn17]: Rudolph, 310. 
+[^fn18]: Rudolph, 313.
+[^fn19]: Thelin, 84. 
+[^fn20]: Thelin, 135. 
+[^fn21]: Thelin, 135-136.
+[^fn22]: Rudolph, 264.
+[^fn23]: Rudolph, 95. 
+[^fn24]: Rudolph, 280.
+[^fn25]: Veysey, 440.
+[^fn26]: Alfred L. Brophy. University, Court, and Slave: Pro-Slavery Thought in Southern Colleges and Courts, and the Coming of Civil War (Oxford, UK: Oxford University Press, 2016), xvi.
+[^fn27]: Brophy, 8.
+[^fn28]: Brophy, 9.
+[^fn29]: Brophy, 10.
+[^fn30]: Brophy, 84.
+[^fn31]: Thelin, 47.
+[^fn32]: Rudolph, 60.
+[^fn33]: Craig Steven Wilder. Ebony & Ivy: Race, Slavery, and the Troubled History of America’s Universities, (New York: Bloomsbury Press, 2013), 11.
+[^fn34]: Robert M. Weir. Colonial South Carolina: A History (Columbia, S.C: University of South Carolina Press, 1997), 205.
+[^fn35]: Walter B. Edgar. South Carolina: A History (Columbia, S.C: University of South Carolina Press, 1998), 80.
+[^fn36]: Weir, 205.
+[^fn37]: Weir, 210.
+[^fn38]: Weir, 213-214.
+[^fn39]: Note that while the College of Charleston claims it was founded in 1770, it was not chartered until 1785.
+[^fn40]: Weir, 251.
+[^fn41]: Edgar, 177.
+[^fn42]: Weir, 251.
+[^fn43]: Weir, 252.
+[^fn44]: Weir, 341-342.
+[^fn45]: Weir, 344.
+[^fn46]: Robert Elder. Calhoun: American Heretic (New York: Basic Books, 2021), 47.
+[^fn47]: Elder, 271.
+[^fn48]: Elder, 335.
+[^fn49]: Elder, 338-339.
+[^fn50]: Elder, 339-340.
+[^fn51]: Meriwether, 162.
+[^fn52]: Quoted in Robert Elder, Calhoun: American Heretic (New York: Basic Books, 2021), 523.
+[^fn53]: Edgar, 299.
+[^fn54]: Edgar, 300.
+[^fn55]: Thelin, 48.
+[^fn56]: Edgar, 392.
+[^fn57]: Edgar, 300.
+[^fn58]: Edgar, 407-408.
+[^fn59]: Edgar, 429.
+[^fn60]: Edgar, 432.
+[^fn61]: Edgar, 433.
+[^fn62]: Edgar, 434.
+[^fn63]: Edgar, 435.
+[^fn64]: Edgar, 437.
+[^fn65]: Thelin, 140.
+[^fn66]: Francis Butler Simkins. The Tillman Movement in South Carolina (Durham, North Carolina: Duke University Press, 1926), 142.
+[^fn67]: Simkins, 145.
+[^fn68]: Sharon Stein, Unsettling the University (Maryland: Johns Hopkins University Press, 2022), 4. 
+[^fn69]: Christopher Newfield. The Great Mistake: How We Wrecked Public Universities and How We Can Fix Them (Baltimore: Johns Hopkins University Press, 2016), 38.
+[^fn70]: Tseen Khoo, James Burford, Emily Henderson, Helena Liu, and Z Nicolazzo. “Not Getting Over It: The Impact of Sara Ahmed’s Work Within Critical University Studies.” Journal of Intercultural Studies 42, no. 1 (2021): 84–86. 
+[^fn71]: Jeffrey J. Williams. “An Emerging Field Deconstructs Academe; The Birth of Critical University Studies.” The Chronicle of Higher Education 58, no. 25 (2012).
+[^fn72]: Williams, An Emerging Field Deconstructs Academe.
+[^fn73]: Williams, An Emerging Field Deconstructs Academe.
+[^fn74]: Upton Sinclair. The Goose-Step: A Study of American Education. Project Gutenberg, 2021.
+[^fn75]: Examples of CUS scholarship that explore the role that unfree people and colonialism played in the development of higher education in the United States include Sharon Stein’s Unsettling the University: Confronting the Colonial Foundation of US Higher Education and Alfred L. Brophy’s University, Court, and Slave: Pro-slavery Thought in Southern Colleges and Courts and the Coming of Civil War.
+[^fn76]: Shawn Graham, Ian Milligan, and Scott Weingart. Exploring Big Historical Data: The Historian’s Macroscope (London, England: Imperial College Press, 2016), 232.
+[^fn77]: Graham, Milligan, and Weingart, 232.
+[^fn78]: E. Thomas Ewing and Katherine Randall. Viral Networks: Connecting Digital Humanities and Medical History (Virginia: VT Publishing, 2018), 113.
+[^fn79]: Manual Lima. Visual Complexity Mapping Patterns of Information (New York: Princeton Architectural Press, 2011), 25. 
+[^fn80]: Lima, 71.
+[^fn81]: Ewing and Randall, Viral Networks: Connecting Digital Humanities and Medical History (Blacksburg: Virginia Tech Publishing, 2019).
+[^fn82]: Ewing and Randall, 113.
+[^fn83]: Ewing and Randall, 113.
+[^fn84]: Ewing and Randall, 120.
+[^fn85]: Anne B. McGrail, Angel David Nieves, and Siobhan Senier. “Digital Humanities as Critical University Studies: Three Provocations.” People, Practice, Power (United States: University of Minnesota Press, 2022), 316.
+[^fn86]: Graham, Milligan, and Weingart, 227.
+[^fn87]: Graham, Milligan, and Weingart, 227.
+[^fn88]: The Newberry Weekly Herald (Newberry, South Carolina). Tue, Feb 9, 1909. Page 5.
+https ://www.newspapers .com/image/173511104. Downloaded on Nov 1, 2023.
+[^fn89]: The Charleston Daily News (Charleston, South Carolina). Monday, January 13, 1868. Page 3.
+[^fn90]: The University of South Carolina began life as South Carolina College. For the purposes of clarity in this analysis, I am utilizing modern institution names.
