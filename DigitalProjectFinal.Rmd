@@ -22,6 +22,8 @@ knitr::opts_chunk$set(echo = TRUE)
   
   Examination of the individuals who played a role in the founding of each school reveals that many of them held political roles in colonial South Carolina and beyond. This realization sheds light on the power that politicians exerted on higher education and vice versa. These men were not just university presidents, founders, and trustees; they were also governors, legislators, and Founding Fathers. They determined what laws would be passed, what priorities existed in the state capital, and perhaps most importantly, what position South Carolina would hold when it came to the institution of slavery. Their political ideologies spilled over into their service in colleges and universities, which meant that the very foundations of many of these institutions were shaped by the same people who believed that perpetuating a system that kept people unfree in the name of personal profit was right. They used their influence in the state house as well as on campuses statewide to teach the next generation of leaders (in many cases, their children) how to justify the existence of such a cruel and inhumane system, which indoctrinated countless young men to believe that what their forefathers did was not only justified but right. The entire state system was meant to serve one purpose through the antebellum period – maintaining everything exactly as it was using all available avenues including the legislature, the courts, churches, and educational institutions. This project shows that they were all intertwined. 
   
+  When charting the number of each political role represented in the network visualization, it is clear that the most common role found across the network is that of legislator. The roles of governor/legislator and governor come in a distant second and third place. It is clear from this data that it was not uncommon for the same person to hold multiple political roles over the course of his or her lifetime. 
+  
   More diversity appeared in higher education during Reconstruction and after, largely in part to federal legislation. Historically Black colleges and universities spread across South Carolina, although most of them were private and religiously affiliated rather than state supported. The participation of politicians in these schools (or the lack thereof) speaks to the importance white politicians placed on each specific college. The more politicians who played a part, the most important the college was to those in power.
 This study utilizes a dataset that includes information about 22 colleges and universities, all located in South Carolina. The data includes fields for founders, namesakes, benefactors, presidents, board members, and other key figures involved in the founding of the schools, along with information about location, land origins, and key years. There are nearly 300 individuals included in this study and biographical information about each one is included when possible. It is not a comprehensive dataset as some information was unavailable despite efforts to obtain it from the institution directly.
 
@@ -248,9 +250,9 @@ visNetwork(nodes = nodes.private, edges = edges, height = 650, width = 1100) %>%
            selectionWidth = 36)
 ```
 
-  When the data is filtered to only include private religously-affiliated institutions, it is clear that these institutions were founded in siloes (with the notable exception of the Lutheran schools). It is also obvious that fewer political figures were involved in these origin stories. A total of 24 political figures appear among these 15 schools, with five institutions having no political figures in the network. The Lutheran cluster has the most political influence of any religious institutions with a total of nine political figures between the schools.
+  When the data is filtered to only include private religously-affiliated institutions, it is clear that these institutions were founded in siloes (with the notable exception of the Lutheran schools). It is also obvious that fewer political figures were involved in these origin stories. A total of 24 political figures appear among these 15 schools, with five institutions having no political figures in the network. The Lutheran cluster has the most political influence of any religious institutions with a total of nine political figures between the schools. When viewing just the private institutions, the number of people involved in politics shrinks considerably. There are also no individuals who served in multiple political roles.
   
-  The religious institutions did not follow the national pattern observed by Edward Rudolph when he noted that the religious education movement began with Presbyterians and Congregationalists and ended with Baptists and Methodists. Rather, it was the Baptists who led the charge in South Carolina as Furman College was the first religiously-affiliated college, founded in 1826. It was followed by the Lutheran Theological Southern Seminary and Erskine College (Presbyterian) in the 1830s. The Episcopalians were the last to join the religious college movement, appearing after the Civil War. South Carolina stands in contrast to national trends in the way that denominations entered the conversation, suggesting that certain denominations may have been stronger in South Carolina than elsewhere in the country. 
+  The religious institutions did not follow the national pattern observed by Edward Rudolph when he noted that the religious education movement began with Presbyterians and Congregationalists and ended with Baptists and Methodists. Rather, it was the Baptists who led the charge in South Carolina as Furman College was the first religiously-affiliated college, founded in 1826. It was followed by the Lutheran Theological Southern Seminary and Erskine College (Presbyterian) in the 1830s. The Episcopalians were the last to join the religious college movement, appearing after the Civil War. South Carolina stands in contrast to national trends in the way that denominations entered the conversation, suggesting that certain denominations may have been stronger in South Carolina than elsewhere in the country. Contrary to national trends, rather than lagging behind other denominations, the Methodists and Baptists cultivated educational initiatives in the form of four institutions and three institutions respectively.
   
 ```{r}
 #Filter by public institutions
@@ -276,7 +278,7 @@ visNetwork(nodes = nodes.public, edges = edges, height = 650, width = 1100) %>%
            selectionWidth = 36)
 ```
 
-  A closer look at just the public institutions reveals a total of 50 political figures among the seven schools. That is more than double the number observed at private schools and spread over half the number of institutions. The individuals involved in these foundings were also important figures in the founding of the United States in some cases as evidenced by the five Founding Fathers who were a part of the College of Charleston's first board of trustees - Thomas Heyward, Jr., Charles Pinckney, Charles C. Pinckney, John Rutledge, and Arthur Middleton. Two of these individuals signed the Declaration of Independence while the other three signed the United States Constitution. That's some significant political star power in just one board, and that does not even count the eight legislators, the legislator/governor, and governor who also sat on that board at the same time.
+  A closer look at just the public institutions reveals a total of 50 political figures among the seven schools. That is more than double the number observed at private schools and spread over half the number of institutions. In many cases, the person held multiple political roles (i.e. serving as a legislator and also as governor). The individuals involved in these foundings were also important figures in the founding of the United States in some cases as evidenced by the five Founding Fathers who were a part of the College of Charleston's first board of trustees - Thomas Heyward, Jr., Charles Pinckney, Charles C. Pinckney, John Rutledge, and Arthur Middleton. Two of these individuals signed the Declaration of Independence while the other three signed the United States Constitution. That's some significant political star power in just one board, and that does not even count the eight legislators, the legislator/governor, and governor who also sat on that board at the same time.
 
   The University of South Carolina also enjoyed considerable political influence with its board, which included a Founding Father (the same one from College of Charleston's board - Charles C. Pinckney), a governor, a legislator/governor, and six legislators. MUSC did not enjoy the same level of political involvement, having only six legislators as a part of its original board.
   
@@ -341,18 +343,6 @@ visNetwork(nodes = nodes.integrated, edges = edges, height = 650, width = 1100) 
 ```
  
  This visualization shows the integrated institutions in South Carolina in the nineteenth century. There is only one institution on this visualization - Claflin University. It is included to make a sobering point, and that is that only one institution of 22 that still exist today welcomed all students regardless of race. It's interesting to note that there is little political involvement in Claflin's founding outside of one South Carolina governor and the founder/namesake/Massachusetts governor William Claflin. The influence that Claflin, a northerner, exerted on the institution bearing his name is apparent here as it is a different model than seen elsewhere in the state.
- 
-
- 
- The Upstate region includes nine schools. Eight of these schools are private with Clemson serving as the sole publicly funded higher education institution in the Upstate, and it did not exist until the late nineteenth century. There are 22 politicians in this network.
- 
-
- 
- Seven institutions existed in the Midlands. Two of these are public - the University of South Carolina and Winthrop. The rest are private. Four of these seven institutions were located in Columbia, South Carolina, suggesting that proximity to the state capital was considered important to the founders of these schools. The other three were located between 30 and 40 miles from Columbia. There are 22 politicians in this network.
- 
-
- 
-  The Lowcountry had six institutions, and four of them are considered public. Half of them are HBCUs. There are 32 politicians in the network for this region. Two of the three oldest institutions in the state belong to the Lowcountry. 
   
 ```{r}
 #Filter by year founded - antebellum version
@@ -405,22 +395,6 @@ visNetwork(nodes = nodes.reconstructionfounding, edges = edges, height = 650, wi
 ```
  
  The other half of the 22 schools in this dataset were founded during Reconstruction and after. Six of these were located in the Upstate, three were located in the Lowcountry, and two were located in the Midlands.
- 
-
- 
-  Contrary to national trends, rather than lagging behind other denominations, the Methodists and Baptists cultivated educational initiatives in the form of four institutions and three institutions respectively.
-  
-
-  
-  When charting the number of each political role represented in the network visualization, it is clear that the most common role found across the network is that of legislator. The roles of governor/legislator and governor come in a distant second and third place. It is clear from this chart that it was not uncommon for the same person to hold multiple political roles over the course of his or her lifetime.
-  
-
-  
-  When viewing just the private institutions, the number of people involved in politics shrinks considerably. There are also no individuals who served in multiple political roles.
-  
-
-  
-  The inverse is true when viewing political roles of individuals involved at public institutions. The graph is considerably more complicated than the private one, which highlights how public officials were also very much involved in the early days of public colleges.
   
 **Conclusion**
 
