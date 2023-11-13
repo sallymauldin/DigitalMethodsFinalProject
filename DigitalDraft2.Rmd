@@ -1,5 +1,5 @@
 ---
-title: "A Century of Change: South Carolina's Higher Education Landscape in the Nineteenth Century"
+title: "A Century of Change: South Carolina's Higher Education Landscape over the Nineteenth Century"
 author: "Sally Mauldin"
 date: "2023-11-13"
 output: html_document
