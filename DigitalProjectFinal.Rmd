@@ -1,7 +1,7 @@
 ---
-title: "To Be Determined"
+title: "A Century of Change: South Carolina's Higher Education Landscape in the Nineteenth Century"
 author: "Sally Mauldin"
-date: "2023-11-07"
+date: "2023-11-13"
 output: html_document
 ---
 
