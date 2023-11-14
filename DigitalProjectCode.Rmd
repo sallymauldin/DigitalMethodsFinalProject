@@ -1,5 +1,5 @@
 ---
-title: "History8550DigitalProjectCode"
+title: "History8550 Digital Project Code All Iterations"
 author: "Sally Mauldin"
 date: "2023-11-14"
 output:
