@@ -18,6 +18,46 @@ Data Biography/Dictionary
   
   This dataset represents the beginning of a larger project, and I acknowledge that it only begins to scratch the surface of the complexities that exist in higher education. While data was collected on several different types of schools (public, religious, military, land grant, co-educational, HBCU, etc.), the time constraints of a single semester did not allow for all of those to be fully explored in this project. While there is much to discuss in this project, it is not complete as there are holes in what was included, particularly with respect to women. Future plans include exploring the papers of key figures represented in the networks as well as newspaper rhetoric about the schools and its affiliated people. I also plan to complete network visualizations comparing each school at different flashpoints in South Carolina history once the dataset is complete – Nullification Crisis, Civil War, Reconstruction, Progressive era, World War I, and the Great Depression. It is undetermined how deep into the twentieth century the larger project will go.
   
+  The dataset has limitations in its current state. The scope includes only the individuals involved in the founding of each college and university. As the schools were founded over the course of more than a century, the individuals who could have been involved in higher education in 1800 are different than those who were key figures in 1897. In this respect, the dataset is incomplete. This is a starting point for further study, and future plans include filling in the key figures at each of the higher education institutions at intervals throughout the long nineteenth century. Network visualizations are likely to show more points of intersection once the dataset is expanded.
+  
+**References**
+
+Anderson, H. George and Robert M. Calhoon. A Truly Efficient School of Theology: The Lutheran Theological Southern Seminary in Historical Context, 1830-1980. Columbia, South Carolina: The R. L. Bryan Company, 1981.
+
+Anderson, James D. The Education of Blacks in the South, 1860-1935. Chapel Hill: The University of North Carolina Press, 1988.
+
+Bedenbaugh, John Benjamin. A Centennial History of Newberry College, 1856-1956. Newberry, South Carolina: Newberry College, 1957.
+
+Calhoun, John C. and H. Lee Cheek. A Disquisition on Government. South Bend, Ind: St. Augustine’s Press, 2007.
+
+Daniel, Robert Norman. Furman University, a History. Greenville, S.C: Furman University, 1951.
+
+Easterby, J. H. (James Harold). A History of the College of Charleston, Founded 1770. Charleston, S.C, 1935.
+
+Edgar, Walter B., J. Brent Morris, and C. James Taylor. A South Carolina Chronology. Third edition. Columbia, South Carolina: The University of South Carolina Press, 2020.
+
+Flynn, Jean Martin. A History of North Greenville Junior College. Tigerville, S.C: The College, 1953.
+
+Green, Edwin L. A History of the University of South Carolina. Columbia, S.C: The State Co., 1916.
+
+Hine, William C. South Carolina State University: A Black Land-Grant College in Jim Crow America. Columbia, South Carolina: The University of South Carolina Press, 2018.
+
+Howard, Henry Jacob. From These Roots: The Story of North Greenville Junior College, 1892-1967. Tigerville, S.C: North Greenville Junior College, 1967.
+
+Kibler, Lillian Adele. The History of Converse College, 1889-1971. Spartanburg, S.C: Converse College, 1973.
+
+Lesesne, Joab Mauldin. A Hundred Years of Erskine College, 1839-1939. University of South Carolina, 1967.
+
+Logue, Cal M. (Cal McLeod), and Howard Dorgan. The Oratory of Southern Demagogues. Baton Rouge: Louisiana State University, 1981.
+
+McMillan, Lewis Kennedy. Negro Higher Education in the State of South Carolina. Orangeburg, S.C, 1953.
+
+Reynolds, Emily Bellinger, and Joan Reynolds Faunt. Biographical Directory of the Senate of the State of South Carolina, 1776-1964. Columbia, South Carolina: Archives Dept., 1964.
+
+Thackston, John Andy. “Primary and Secondary Education in South Carolina from 1780 to 1860.” 1908.
+
+Wallace, David Duncan. History of Wofford College, 1854-1949. Nashville: Vanderbilt University Press, 1951.
+  
 Citations
 
 [^fn1]: James D. Anderson. The Education of Blacks in the South, 1860-1935 (Chapel Hill: University of North Carolina Press, 1988), 3.
