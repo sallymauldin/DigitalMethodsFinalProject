@@ -1,7 +1,7 @@
 ---
 title: "Pockets of Power: South Carolina's Higher Education Landscape in the Nineteenth Century"
 author: "Sally Mauldin"
-date: "2023-12-4"
+date: "2023-12-5"
 output: html_document
 ---
 
