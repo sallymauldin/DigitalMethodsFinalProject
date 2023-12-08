@@ -1,4 +1,4 @@
-#Data Biography/Dictionary
+Data Biography/Dictionary
 
   To understand the parameters of the project, we must define what is meant by higher education and what is not included. For the purposes of this project, higher education institutions can be understood to include four-year degree-granting colleges and universities as of 2023. The study only includes institutions that are currently operational and accredited by the Southern Association of Colleges and Schools Commission on Colleges (SACSCOC). The study will further be limited by institutions that were operational during the nineteenth century. This encompasses 22 different institutions located throughout the state. Almost all of the institutions were founded in the nineteenth century; the sole exception is the College of Charleston which traces its roots to the end of the eighteenth century. Note that College of Charleston claims 1770 as its year of founding; however, it was not chartered by the state until 1785.
   
