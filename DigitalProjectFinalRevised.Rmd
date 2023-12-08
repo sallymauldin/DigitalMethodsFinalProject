@@ -1,8 +1,11 @@
 ---
-title: "Pockets of Power: South Carolina's Higher Education Landscape in the Nineteenth Century"
+title: 'Pockets of Power: South Carolina''s Higher Education Landscape in the Nineteenth
+  Century'
 author: "Sally Mauldin"
 date: "2023-12-5"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -42,7 +45,7 @@ Several trends are apparent when reviewing South Carolina’s data – 1. Public
   
 None of these findings are likely to be very surprising to scholars familiar with South Carolina in the nineteenth century; however, the extent to which politicians were involved in higher education and how that participation worked in conjunction with legislation to uphold slavery as a way of life is of note. In other words, how deeply politicians were involved in higher education, particularly at public institutions, signals a desire to inculcate the next generation to perpetuate the political ideologies of those involved. The overwhelming majority of these political figures were white men, and stories like those of half-Black, half-Cherokee Elizabeth Evelyn Wright were lost in favor of louder voices that overshadowed her in the General Assembly and Governor’s Mansion. This project seeks to draw attention to educators like Wright by first acknowledging those that had political power during her lifetime to emphasize how impressive her accomplishments (and others like her) were as they were done independent of the support of political figures who would become household names. 
   
-In the sections that follow, network analysis demonstrates the significant roles that politics and networks of power played within South Carolina's public higher education landscape. These pockets of power evolved in response to major historical events - the Civil War, Reconstruction, the Great Awakening - to name a few. The relationships between the key figures who founded each of these institutions reveal regions of power within the state that shifted over time and in response to larger historical narratives like emancipation and Progressivism. The network analyses raise a number of questions as well for future study.
+In the sections that follow, network analysis demonstrates the significant roles that politics and networks of power played within South Carolina's public higher education landscape. These pockets of power evolved in response to major historical events - the Civil War, Reconstruction, the Second Great Awakening - to name a few. The relationships between the key figures who founded each of these institutions reveal regions of power within the state that shifted over time and in response to larger historical narratives like emancipation and Progressivism. The network analyses raise a number of questions as well for future study.
   
 **II. Historical Background**
 
