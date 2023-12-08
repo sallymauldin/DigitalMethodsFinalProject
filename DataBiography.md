@@ -52,7 +52,6 @@ Thackston, John Andy. “Primary and Secondary Education in South Carolina from 
 
 Wallace, David Duncan. History of Wofford College, 1854-1949. Nashville: Vanderbilt University Press, 1951.
   
-Citations
 
 [^fn1]: James D. Anderson. The Education of Blacks in the South, 1860-1935 (Chapel Hill: University of North Carolina Press, 1988), 3.
 [^fn2]: Anderson, 279.
